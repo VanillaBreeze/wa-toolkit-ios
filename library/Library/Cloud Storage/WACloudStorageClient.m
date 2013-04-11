@@ -840,7 +840,7 @@ static NSString *TABLE_UPDATE_ENTITY_REQUEST_STRING = @"<?xml version=\"1.0\" en
         NSString *containerName = [container.name lowercaseString];
         NSString *endpoint = [NSString stringWithFormat:@"/%@/%@", [containerName URLEncode], [blob.name URLEncode]]; 
         request = [_credential authenticatedRequestWithEndpoint:endpoint forStorageType:@"blob" httpMethod:@"PUT" contentData:blob.contentData contentType:blob.contentType metadata:blob.metadata, @"x-ms-blob-type", @"BlockBlob", nil];
-        [request addValue:@"max-age=2592000" forHTTPHeaderField:@"cache_control"]; // set max age
+        [request addValue:@"max-age=2592000" forHTTPHeaderField:@"Cache-Control"]; // set max age
         
         [request fetchNoResponseWithCompletionHandler:^(WACloudURLRequest *request, NSError *error) {
             if (error) {
