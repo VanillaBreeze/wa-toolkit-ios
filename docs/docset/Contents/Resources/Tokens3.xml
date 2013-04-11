@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WABlobContainer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+			<Abstract>A class that represents a Windows Azure blob container.</Abstract>
+			<DeclaredIn>WABlobContainer.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WABlobContainer/name</TokenIdentifier>
+			<Abstract>The name of the container.</Abstract>
+			<DeclaredIn>WABlobContainer.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WABlobContainer/URL</TokenIdentifier>
+			<Abstract>The address of the container.</Abstract>
+			<DeclaredIn>WABlobContainer.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WABlobContainer/sharedAccessSigniture</TokenIdentifier>
+			<Abstract>The shared access signiture for the container.</Abstract>
+			<DeclaredIn>WABlobContainer.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *sharedAccessSigniture</Declaration>
+			
+			
+			<Anchor>//api/name/sharedAccessSigniture</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WABlobContainer/metadata</TokenIdentifier>
+			<Abstract>The metadata for the container.</Abstract>
+			<DeclaredIn>WABlobContainer.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *metadata</Declaration>
+			
+			
+			<Anchor>//api/name/metadata</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WABlobContainer/properties</TokenIdentifier>
+			<Abstract>The properties for the container.</Abstract>
+			<DeclaredIn>WABlobContainer.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WABlobContainer/setValue:forMetadataKey:</TokenIdentifier>
+			<Abstract>Sets a value to the container metadata dictionary.</Abstract>
+			<DeclaredIn>WABlobContainer.h</DeclaredIn>			
+			
+			<Declaration>- (void)setValue:(NSString *)value forMetadataKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract>The value for the key.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract>The key for the value.
+
+@discussion Raises an NSInvalidArgumentException if aKey or anObject is nil. If you need to represent a nil value in the dictionary, use NSNull. If aKey already exists in the dictionary, the dictionary’s previous value object for that key is sent a release message and anObject takes its place.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setValue:forMetadataKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WABlobContainer/removeMetadataForKey:</TokenIdentifier>
+			<Abstract>Removes a given key and its associated value from the dictionary.</Abstract>
+			<DeclaredIn>WABlobContainer.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeMetadataForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract>The key to remove.
+
+@discussion Does nothing if key does not exist.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeMetadataForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WABlobContainer/initContainerWithName:</TokenIdentifier>
+			<Abstract>Initializes a newly created WABlobContainer with a name.</Abstract>
+			<DeclaredIn>WABlobContainer.h</DeclaredIn>			
+			
+			<Declaration>- (id)initContainerWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract>The name of the container.
+	</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WABlobContainer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initContainerWithName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WABlobContainer/initContainerWithName:URL:</TokenIdentifier>
+			<Abstract>Initializes a newly created WABlobContainer with a name.</Abstract>
+			<DeclaredIn>WABlobContainer.h</DeclaredIn>			
+			
+			<Declaration>- (id)initContainerWithName:(NSString *)name URL:(NSString *)URL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract>The name of the container.</Abstract>
+				</Parameter><Parameter>
+					<Name>URL</Name>
+					<Abstract>The address of the container.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WABlobContainer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initContainerWithName:URL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WABlobContainer/initContainerWithName:URL:sharedAccessSigniture:</TokenIdentifier>
+			<Abstract>Initializes a newly created WABlobContainer with a name, address and metadata for the container.</Abstract>
+			<DeclaredIn>WABlobContainer.h</DeclaredIn>			
+			
+			<Declaration>- (id)initContainerWithName:(NSString *)name URL:(NSString *)URL sharedAccessSigniture:(NSString *)sharedAccessSigniture</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract>The name of the container.</Abstract>
+				</Parameter><Parameter>
+					<Name>URL</Name>
+					<Abstract>The address of the container.</Abstract>
+				</Parameter><Parameter>
+					<Name>sharedAccessSigniture</Name>
+					<Abstract>The container's shared access signiture.
+
+@discussion This sharedAccessSigniture is only valid when using a proxy</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WABlobContainer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initContainerWithName:URL:sharedAccessSigniture:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WABlobContainer/initContainerWithName:URL:sharedAccessSigniture:properties:</TokenIdentifier>
+			<Abstract>Initializes a newly created WABlobContainer with a name, address, metadata for the container.</Abstract>
+			<DeclaredIn>WABlobContainer.h</DeclaredIn>			
+			
+			<Declaration>- (id)initContainerWithName:(NSString *)name URL:(NSString *)URL sharedAccessSigniture:(NSString *)sharedAccessSigniture properties:(NSDictionary *)properties</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract>The name of the container.</Abstract>
+				</Parameter><Parameter>
+					<Name>URL</Name>
+					<Abstract>The address of the container.</Abstract>
+				</Parameter><Parameter>
+					<Name>sharedAccessSigniture</Name>
+					<Abstract>The container's metadata.</Abstract>
+				</Parameter><Parameter>
+					<Name>properties</Name>
+					<Abstract>The properties for the container.
+
+@discussion This sharedAccessSigniture is only valid when using a proxy</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WABlobContainer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initContainerWithName:URL:sharedAccessSigniture:properties:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

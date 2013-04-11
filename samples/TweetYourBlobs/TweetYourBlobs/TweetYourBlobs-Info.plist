@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>TweetBlob</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon.png</string>
+		<string>Icon@2x.png</string>
+	</array>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>Icon.png</string>
+				<string>Icon@2x.png</string>
+			</array>
+			<key>UIPrerenderedIcon</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.microsoft.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UIMainStoryboardFile</key>
+	<string>MainStoryboard</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>ToolkitConfig</key>
+	<dict>
+		<key>CloudReadyACS</key>
+		<dict>
+			<key>ACSNamespace</key>
+			<string>{the namespace of the ACS service you are using}</string>
+			<key>ACSRealm</key>
+			<string>uri:wazmobiletoolkit</string>
+			<key>ProxyService</key>
+			<string>{the service name where the ACS Cloud Ready package is deployed}</string>
+		</dict>
+		<key>CloudReadySimple</key>
+		<dict>
+			<key>ProxyService</key>
+			<string>{the service name where the Membership Cloud Ready package is deployed}</string>
+		</dict>
+		<key>ConnectionType</key>
+		<string>{set to Direct or CloudReadySimple or CloudReadyACS}</string>
+		<key>Direct</key>
+		<dict>
+			<key>AccountName</key>
+			<string>{the name of the Windows Azure storage account}</string>
+			<key>DirectAccessKey</key>
+			<string>{the access key for the storage account}</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

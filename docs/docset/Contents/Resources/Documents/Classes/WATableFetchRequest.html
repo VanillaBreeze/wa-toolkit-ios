@@ -1,0 +1,665 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>WATableFetchRequest Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 737)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">WAToolkit </a></h1>
+				<a id="developerHome" href="../index.html">Microsoft</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WATableFetchRequest Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/filter">&nbsp;&nbsp;&nbsp;&nbsp;filter</option>
+	
+	<option value="//api/name/partitionKey">&nbsp;&nbsp;&nbsp;&nbsp;partitionKey</option>
+	
+	<option value="//api/name/resultContinuation">&nbsp;&nbsp;&nbsp;&nbsp;resultContinuation</option>
+	
+	<option value="//api/name/rowKey">&nbsp;&nbsp;&nbsp;&nbsp;rowKey</option>
+	
+	<option value="//api/name/tableName">&nbsp;&nbsp;&nbsp;&nbsp;tableName</option>
+	
+	<option value="//api/name/topRows">&nbsp;&nbsp;&nbsp;&nbsp;topRows</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/fetchRequestForTable:">&nbsp;&nbsp;&nbsp;&nbsp;+ fetchRequestForTable:</option>
+	
+	<option value="//api/name/fetchRequestForTable:predicate:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ fetchRequestForTable:predicate:error:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/filter">filter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/partitionKey">partitionKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultContinuation">resultContinuation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowKey">rowKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableName">tableName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/topRows">topRows</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchRequestForTable:">fetchRequestForTable:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchRequestForTable:predicate:error:">fetchRequestForTable:predicate:error:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="WATableFetchRequest Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WATableFetchRequest Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">WATableFetchRequest.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A class that represents a Windows Azure Table Storage fetch request.</p>
+
+<p>The request is used with the <a href="../Classes/WACloudStorageClient.html">WACloudStorageClient</a> when working with tables.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableName">&nbsp;&nbsp;tableName</a></code>
+		<span class="tooltip"><p>The table name.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/partitionKey">&nbsp;&nbsp;partitionKey</a></code>
+		<span class="tooltip"><p>The partition key.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowKey">&nbsp;&nbsp;rowKey</a></code>
+		<span class="tooltip"><p>The row key.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/filter">&nbsp;&nbsp;filter</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/filter">filter</a> to use in the table fetch request.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/topRows">&nbsp;&nbsp;topRows</a></code>
+		<span class="tooltip"><p>The number of rows to limit with the tech.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultContinuation">&nbsp;&nbsp;resultContinuation</a></code>
+		<span class="tooltip"><p>The continuation to use in the fetch request.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchRequestForTable:">+&nbsp;fetchRequestForTable:</a></code>
+		<span class="tooltip"><p>Create a new <a href="WATableFetchRequest.html">WATableFetchRequest</a> with a table name.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchRequestForTable:predicate:error:">+&nbsp;fetchRequestForTable:predicate:error:</a></code>
+		<span class="tooltip"><p>Create a new <a href="WATableFetchRequest.html">WATableFetchRequest</a> with a table name, predicate, and error.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/filter" title="filter"></a>
+	<h3 class="subsubtitle method-title">filter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/filter">filter</a> to use in the table fetch request.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (copy) NSString *filter</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WATableFetchRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/partitionKey" title="partitionKey"></a>
+	<h3 class="subsubtitle method-title">partitionKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The partition key.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (copy) NSString *partitionKey</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WATableFetchRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultContinuation" title="resultContinuation"></a>
+	<h3 class="subsubtitle method-title">resultContinuation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The continuation to use in the fetch request.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) WAResultContinuation *resultContinuation</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WATableFetchRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowKey" title="rowKey"></a>
+	<h3 class="subsubtitle method-title">rowKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The row key.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (copy) NSString *rowKey</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WATableFetchRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableName" title="tableName"></a>
+	<h3 class="subsubtitle method-title">tableName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The table name.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *tableName</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WATableFetchRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/topRows" title="topRows"></a>
+	<h3 class="subsubtitle method-title">topRows</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of rows to limit with the tech.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (assign) NSInteger topRows</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WATableFetchRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchRequestForTable:" title="fetchRequestForTable:"></a>
+	<h3 class="subsubtitle method-title">fetchRequestForTable:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a new <a href="WATableFetchRequest.html">WATableFetchRequest</a> with a table name.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (WATableFetchRequest *)fetchRequestForTable:(NSString *)<em>tableName</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tableName</em></dt>
+			<dd><p>The table name for the fetch request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly initialized <a href="WATableFetchRequest.html">WATableFetchRequest</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WATableFetchRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchRequestForTable:predicate:error:" title="fetchRequestForTable:predicate:error:"></a>
+	<h3 class="subsubtitle method-title">fetchRequestForTable:predicate:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a new <a href="WATableFetchRequest.html">WATableFetchRequest</a> with a table name, predicate, and error.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (WATableFetchRequest *)fetchRequestForTable:(NSString *)<em>tableName</em> predicate:(NSPredicate *)<em>predicate</em> error:(NSError **)<em>error</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tableName</em></dt>
+			<dd><p>The table name for the fetch request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>predicate</em></dt>
+			<dd><p>The predicate for the fetch request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An NSError object that will be populated if the predicate is not valid.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly initialized <a href="WATableFetchRequest.html">WATableFetchRequest</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WATableFetchRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2011 Microsoft. All rights reserved. (Last updated: 2011-12-15)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 737)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

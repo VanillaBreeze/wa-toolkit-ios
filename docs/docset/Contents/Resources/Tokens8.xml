@@ -1,0 +1,1907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WACloudStorageClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WACloudStorageClient</TokenIdentifier>
+			<Abstract>The cloud storage client is used to invoke operations on, and return data from, Windows Azure storage.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+			<Abstract>The delegate is sent messages when content is loaded or errors occur from Windows Azure storage.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id&lt;WACloudStorageClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WACloudStorageClient/ignoreSSLErrorFor:</TokenIdentifier>
+			<Abstract>Ignores any ssl errors from the given host. This is useful when using a self signed certificate.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+			<Declaration>+ (void)ignoreSSLErrorFor:(NSString *)host</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>host</Name>
+					<Abstract>The host to ignore errors.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ignoreSSLErrorFor:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobContainers</TokenIdentifier>
+			<Abstract>Fetch a list of blob containers asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobContainers</Declaration>
+			
+			
+			<Anchor>//api/name/fetchBlobContainers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobContainersWithCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch a list of blob containers asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobContainersWithCompletionHandler:(void ( ^ ) ( NSArray *containers , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobContainersWithCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobContainersWithContinuation:maxResult:</TokenIdentifier>
+			<Abstract>Fetch a list of blob containers asynchronously using continuation.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobContainersWithContinuation:(WAResultContinuation *)resultContinuation maxResult:(NSInteger)maxResult</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The result continuation to use for this fetch request.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxResult</Name>
+					<Abstract>The max number of containers to reuturn for this fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobContainersWithContinuation:maxResult:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobContainersWithContinuation:maxResult:usingCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch a list of blob containers asynchronously using continuation with a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobContainersWithContinuation:(WAResultContinuation *)resultContinuation maxResult:(NSInteger)maxResult usingCompletionHandler:(void ( ^ ) ( NSArray *containers , WAResultContinuation *resultContinuation , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The result continuation to use for this fetch request.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxResult</Name>
+					<Abstract>The max number of containers to reuturn for this fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobContainersWithContinuation:maxResult:usingCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobContainersWithRequest:</TokenIdentifier>
+			<Abstract>Fetch a list of blob containers asynchronously using a fetch request.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainerFetchRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobContainersWithRequest:(WABlobContainerFetchRequest *)fetchRequest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>The fetch request for the containers.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobContainersWithRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobContainersWithRequest:usingCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch a list of blob containers asynchronously using fetch request with a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainerFetchRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobContainersWithRequest:(WABlobContainerFetchRequest *)fetchRequest usingCompletionHandler:(void ( ^ ) ( NSArray *containers , WAResultContinuation *resultContinuation , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>The fetch request for the containers.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobContainersWithRequest:usingCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobContainerNamed:</TokenIdentifier>
+			<Abstract>Fetch a blob container by name asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobContainerNamed:(NSString *)containerName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>containerName</Name>
+					<Abstract>The name of the container to fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobContainerNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobContainerNamed:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch a blob container by name asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobContainerNamed:(NSString *)containerName withCompletionHandler:(void ( ^ ) ( WABlobContainer *container , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>containerName</Name>
+					<Abstract>The name of the container to fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobContainerNamed:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/addBlobContainerNamed:</TokenIdentifier>
+			<Abstract>Adds a named blob container asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)addBlobContainerNamed:(NSString *)containerName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>containerName</Name>
+					<Abstract>The container name to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent or not.</Abstract></ReturnValue>
+			<Anchor>//api/name/addBlobContainerNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/addBlobContainerNamed:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Adds a named blob container asynchronously using a block.
+	
+The method will run asynchronously and will call back through the block. The block wil contain an error if one occurred or nil.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)addBlobContainerNamed:(NSString *)containerName withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>containerName</Name>
+					<Abstract>The container name to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the add.
+	</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent or not.</Abstract></ReturnValue>
+			<Anchor>//api/name/addBlobContainerNamed:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/addBlobContainer:</TokenIdentifier>
+			<Abstract>Adds a named blob container asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)addBlobContainer:(WABlobContainer *)container</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract>The container to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent or not.</Abstract></ReturnValue>
+			<Anchor>//api/name/addBlobContainer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/addBlobContainer:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Adds a named blob container asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)addBlobContainer:(WABlobContainer *)container withCompletionHandler:(void ( ^ ) ( NSError *))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract>The container  to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the add.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent or not.</Abstract></ReturnValue>
+			<Anchor>//api/name/addBlobContainer:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteBlobContainer:</TokenIdentifier>
+			<Abstract>Deletes a specified blob container asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)deleteBlobContainer:(WABlobContainer *)container</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract>The container to delete.
+	</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent or not.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteBlobContainer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteBlobContainer:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Deletes a specified blob container asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)deleteBlobContainer:(WABlobContainer *)container withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract>The container to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the delete.
+	</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent or not.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteBlobContainer:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteBlobContainerNamed:</TokenIdentifier>
+			<Abstract>Deletes a specified named blob container asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)deleteBlobContainerNamed:(NSString *)containerName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>containerName</Name>
+					<Abstract>The name of the container to delete.
+	</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent or not.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteBlobContainerNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteBlobContainerNamed:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Deletes a specified named blob container asynchronously with a block.
+	
+The method will run asynchronously and will call back through the block. The block will return an error if there was an error or nil if not.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)deleteBlobContainerNamed:(NSString *)containerName withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>containerName</Name>
+					<Abstract>The name of the container to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the delete.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent or not.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteBlobContainerNamed:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobs:</TokenIdentifier>
+			<Abstract>Fetch the blobs for the specified blob container asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobsWithContinuation:resultContinuation:maxResult:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobs:(WABlobContainer *)container</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract>The container for the blobs to fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobs:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobs:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch the blobs for the specified blob container asynchronously with a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobsWithContinuation:resultContinuation:maxResult:usingCompletionHandler:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlob</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobs:(WABlobContainer *)container withCompletionHandler:(void ( ^ ) ( NSArray *blobs , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract>The container for the blobs to fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the delete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobs:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobsWithContinuation:resultContinuation:maxResult:</TokenIdentifier>
+			<Abstract>Fetch the blobs for the specified blob container asynchronously using continuation.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobsWithContinuation:(WABlobContainer *)container resultContinuation:(WAResultContinuation *)resultContinuation maxResult:(NSInteger)maxResult</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract>The container for the blobs to fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The result continuation to use for this fetch request.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxResult</Name>
+					<Abstract>The max number of blobs to reuturn for this fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobsWithContinuation:resultContinuation:maxResult:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobsWithContinuation:resultContinuation:maxResult:usingCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch the blobs for the specified blob container asynchronously using continuation with a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobsWithContinuation:(WABlobContainer *)container resultContinuation:(WAResultContinuation *)resultContinuation maxResult:(NSInteger)maxResult usingCompletionHandler:(void ( ^ ) ( NSArray *blobs , WAResultContinuation *resultContinuation , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract>The container for the blobs to fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The result continuation to use for this fetch request.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxResult</Name>
+					<Abstract>The max number of blobs to reuturn for this fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobsWithContinuation:resultContinuation:maxResult:usingCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobsWithRequest:</TokenIdentifier>
+			<Abstract>Fetch the blobs for the specified blob container asynchronously using continuation.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobFetchRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobsWithRequest:(WABlobFetchRequest *)fetchRequest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>A fetch request that specifies the search criteria for the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobsWithRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobsWithRequest:usingCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch the blobs for the specified blob container asynchronously using continuation with a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobFetchRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobsWithRequest:(WABlobFetchRequest *)fetchRequest usingCompletionHandler:(void ( ^ ) ( NSArray *blobs , WAResultContinuation *resultContinuation , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>A fetch request that specifies the search criteria for the fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobsWithRequest:usingCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobData:</TokenIdentifier>
+			<Abstract>Fetch the blob data for the specified blob asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlob</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobData:(WABlob *)blob</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>blob</Name>
+					<Abstract>The blob to fetch the data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobData:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch the blob data for the specified blob asynchronously.
+	
+The method will run asynchronously and will call back through the block. The block will be called with the data for the blob if the request succeeds or an error if the request fails.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlob</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchBlobData:(WABlob *)blob withCompletionHandler:(void ( ^ ) ( NSData *data , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>blob</Name>
+					<Abstract>The blob to fetch the data.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobData:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobDataFromURL:</TokenIdentifier>
+			<Abstract>Fetch the blob data for the specified url asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)fetchBlobDataFromURL:(NSURL *)URL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URL</Name>
+					<Abstract>The URL of the blob to fetch the data.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent or not.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchBlobDataFromURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchBlobDataFromURL:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch the blob data for the specified blob asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)fetchBlobDataFromURL:(NSURL *)URL withCompletionHandler:(void ( ^ ) ( NSData *data , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URL</Name>
+					<Abstract>The URL of the blob to fetch the data.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchBlobDataFromURL:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/addBlobToContainer:blobName:contentData:contentType:</TokenIdentifier>
+			<Abstract>Adds a new blob to a container asynchronously, given the name of the blob, binary data for the blob, and content type.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addBlobToContainer:(WABlobContainer *)container blobName:(NSString *)blobName contentData:(NSData *)contentData contentType:(NSString *)contentType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract>The container to use to add the blob.</Abstract>
+				</Parameter><Parameter>
+					<Name>blobName</Name>
+					<Abstract>The name of the blob.</Abstract>
+				</Parameter><Parameter>
+					<Name>contentData</Name>
+					<Abstract>The data for the blob.</Abstract>
+				</Parameter><Parameter>
+					<Name>contentType</Name>
+					<Abstract>The content type for the blob.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBlobToContainer:blobName:contentData:contentType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/addBlobToContainer:blobName:contentData:contentType:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Adds a new blob to a container asynchronously, given the name of the blob, binary data for the blob, and content type with a block.
+	
+The method will run asynchronously and will call back through the block. The block will be called an error if the request fails, otherwise the error object will be nil.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addBlobToContainer:(WABlobContainer *)container blobName:(NSString *)blobName contentData:(NSData *)contentData contentType:(NSString *)contentType withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract>The container to use to add the blob.</Abstract>
+				</Parameter><Parameter>
+					<Name>blobName</Name>
+					<Abstract>The name of the blob to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>contentData</Name>
+					<Abstract>The content of the blob to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>contentType</Name>
+					<Abstract>The type of content to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBlobToContainer:blobName:contentData:contentType:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/addBlob:toContainer:</TokenIdentifier>
+			<Abstract>Adds a new blob to a container asynchronously, given the name of the blob, binary data for the blob, and content type.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addBlob:(WABlob *)blob toContainer:(WABlobContainer *)container</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>blob</Name>
+					<Abstract>The blob to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>container</Name>
+					<Abstract>The container to use to add the blob.</Abstract>
+				</Parameter><Parameter>
+					<Name>contentType</Name>
+					<Abstract>The content type for the blob.</Abstract>
+				</Parameter><Parameter>
+					<Name>contentData</Name>
+					<Abstract>The data for the blob.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBlob:toContainer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/addBlob:toContainer:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Adds a new blob to a container asynchronously, given the blob and container with a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addBlob:(WABlob *)blob toContainer:(WABlobContainer *)container withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>blob</Name>
+					<Abstract>The blob to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>container</Name>
+					<Abstract>The container to use to add the blob.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBlob:toContainer:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteBlob:</TokenIdentifier>
+			<Abstract>Deletes a given blob asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlob</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)deleteBlob:(WABlob *)blob</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>blob</Name>
+					<Abstract>The blob to delete</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteBlob:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteBlob:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Deletes a blob asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlob</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)deleteBlob:(WABlob *)blob withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>blob</Name>
+					<Abstract>The blob to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the delete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteBlob:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueues</TokenIdentifier>
+			<Abstract>Fetch a list of queues asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueues</Declaration>
+			
+			
+			<Anchor>//api/name/fetchQueues</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueuesWithCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch a list of queues asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueue</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueuesWithCompletionHandler:(void ( ^ ) ( NSArray *queues , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchQueuesWithCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueuesWithContinuation:maxResult:</TokenIdentifier>
+			<Abstract>Fetch a list of queues asynchronously with a result continuation.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueuesWithContinuation:(WAResultContinuation *)resultContinuation maxResult:(NSInteger)maxResult</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The result continuation to use for this fetch request.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxResult</Name>
+					<Abstract>The max number of queues to reuturn for this fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchQueuesWithContinuation:maxResult:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueuesWithContinuation:maxResult:usingCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch a list of queues asynchronously with a result continuation using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueuesWithContinuation:(WAResultContinuation *)resultContinuation maxResult:(NSInteger)maxResult usingCompletionHandler:(void ( ^ ) ( NSArray *queues , WAResultContinuation *resultContinuation , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The result continuation to use for this fetch request.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxResult</Name>
+					<Abstract>The max number of queues to reuturn for this fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchQueuesWithContinuation:maxResult:usingCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueuesWithRequest:</TokenIdentifier>
+			<Abstract>Fetch a list of queues asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueuesWithRequest:(WAQueueFetchRequest *)fetchRequest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>The fetch request for the queues.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchQueuesWithRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueuesWithRequest:usingCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch a list of queues asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueue</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueuesWithRequest:(WAQueueFetchRequest *)fetchRequest usingCompletionHandler:(void ( ^ ) ( NSArray *queues , WAResultContinuation *resultContinuation , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>The fetch request for the queues.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchQueuesWithRequest:usingCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/addQueueNamed:</TokenIdentifier>
+			<Abstract>Adds a queue asynchronously, given a specified queue name.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addQueueNamed:(NSString *)queueName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addQueueNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/addQueueNamed:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Adds a queue asynchronously, given a specified queue name using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)addQueueNamed:(NSString *)queueName withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addQueueNamed:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteQueueNamed:</TokenIdentifier>
+			<Abstract>Deletes a queue asynchronously, given a specified queue name.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)deleteQueueNamed:(NSString *)queueName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue to delete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteQueueNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteQueueNamed:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Deletes a queue asynchronously, given a specified queue name using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteQueueNamed:(NSString *)queueName withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the delete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteQueueNamed:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueueMessage:</TokenIdentifier>
+			<Abstract>Fetch a single message asynchronously from the specified queue.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueueMessage:(NSString *)queueName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchQueueMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueueMessage:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch a single message asynchronously from the specified queue using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueueMessage:(NSString *)queueName withCompletionHandler:(void ( ^ ) ( WAQueueMessage *message , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchQueueMessage:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueueMessages:</TokenIdentifier>
+			<Abstract>Fetch messages asynchronously for a given queue name.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueueMessages:(NSString *)queueName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue to get messages.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchQueueMessages:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueueMessages:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch messages asynchronously for a given queue name using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueueMessages:(NSString *)queueName withCompletionHandler:(void ( ^ ) ( NSArray *messages , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue to get messages.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchQueueMessages:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueueMessages:fetchCount:</TokenIdentifier>
+			<Abstract>Fetch a batch of messages asynchronously from the specified queue.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueueMessages:(NSString *)queueName fetchCount:(NSInteger)fetchCount</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>fetchCount</Name>
+					<Abstract>The number of messages to fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchQueueMessages:fetchCount:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueueMessages:fetchCount:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch a batch of messages asynchronously from the specified queue using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueueMessages:(NSString *)queueName fetchCount:(NSInteger)fetchCount withCompletionHandler:(void ( ^ ) ( NSArray *messages , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>fetchCount</Name>
+					<Abstract>The number of messages to fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchQueueMessages:fetchCount:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueueMessagesWithRequest:</TokenIdentifier>
+			<Abstract>Fetch a batch of messages asynchronously from the specified queue.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessageFetchRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueueMessagesWithRequest:(WAQueueMessageFetchRequest *)fetchRequest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>The fetch request to fetch the messages.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchQueueMessagesWithRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchQueueMessagesWithRequest:usingCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch a batch of messages asynchronously from the specified queue using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessage</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessageFetchRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchQueueMessagesWithRequest:(WAQueueMessageFetchRequest *)fetchRequest usingCompletionHandler:(void ( ^ ) ( NSArray *messages , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>The fetch request to fetch the messages.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchQueueMessagesWithRequest:usingCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/peekQueueMessage:</TokenIdentifier>
+			<Abstract>Peeks a single message from the specified queue asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)peekQueueMessage:(NSString *)queueName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/peekQueueMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/peekQueueMessage:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Peeks a single message from the specified queue asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)peekQueueMessage:(NSString *)queueName withCompletionHandler:(void ( ^ ) ( WAQueueMessage *message , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the peek.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/peekQueueMessage:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/peekQueueMessages:fetchCount:</TokenIdentifier>
+			<Abstract>Peeks a batch of messages from the specified queue asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)peekQueueMessages:(NSString *)queueName fetchCount:(NSInteger)fetchCount</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>fetchCount</Name>
+					<Abstract>The number of messages to return.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/peekQueueMessages:fetchCount:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/peekQueueMessages:fetchCount:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Peeks a batch of messages from the specified queue asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)peekQueueMessages:(NSString *)queueName fetchCount:(NSInteger)fetchCount withCompletionHandler:(void ( ^ ) ( NSArray *messages , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>fetchCount</Name>
+					<Abstract>The number of messages to return.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the peek.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/peekQueueMessages:fetchCount:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteQueueMessage:queueName:</TokenIdentifier>
+			<Abstract>Deletes a message asynchronously, given a specified queue name and queueMessage.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)deleteQueueMessage:(WAQueueMessage *)queueMessage queueName:(NSString *)queueName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueMessage</Name>
+					<Abstract>The message to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue that owns the message.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteQueueMessage:queueName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteQueueMessage:queueName:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Deletes a message asynchronously, given a specified queue name and queueMessage using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)deleteQueueMessage:(WAQueueMessage *)queueMessage queueName:(NSString *)queueName withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueMessage</Name>
+					<Abstract>The message to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue that owns the message.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the peek.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteQueueMessage:queueName:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/addMessageToQueue:queueName:</TokenIdentifier>
+			<Abstract>Adds a message into a queue asynchronously, given a specified queue name and message.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addMessageToQueue:(NSString *)message queueName:(NSString *)queueName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract>The message to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue to add the message.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addMessageToQueue:queueName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/addMessageToQueue:queueName:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Adds a message into a queue asynchronously, given a specified queue name and message.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)addMessageToQueue:(NSString *)message queueName:(NSString *)queueName withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract>The message to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue to add the message.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addMessageToQueue:queueName:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchTables</TokenIdentifier>
+			<Abstract>Fetch a list of tables asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchTables</Declaration>
+			
+			
+			<Anchor>//api/name/fetchTables</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchTablesWithCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch a list of tables asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)fetchTablesWithCompletionHandler:(void ( ^ ) ( NSArray *tables , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.
+
+@discussion The method will run asynchronously and will call back through the block. The block will be called with an arrary of NSString objects that are the table names or an error if the request fails, otherwise the error object will be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchTablesWithCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchTablesWithContinuation:</TokenIdentifier>
+			<Abstract>Fetch a list of tables asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchTablesWithContinuation:(WAResultContinuation *)resultContinuation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The result continuation to use for this fetch request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchTablesWithContinuation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchTablesWithContinuation:usingCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetch a list of tables asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchTablesWithContinuation:(WAResultContinuation *)resultContinuation usingCompletionHandler:(void ( ^ ) ( NSArray *tables , WAResultContinuation *resultContinuation , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The result continuation to use for this fetch request.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchTablesWithContinuation:usingCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/createTableNamed:</TokenIdentifier>
+			<Abstract>Creates a new table asynchronously with a specified name.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)createTableNamed:(NSString *)newTableName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newTableName</Name>
+					<Abstract>The new table name.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createTableNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/createTableNamed:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Creates a new table asynchronously with a specified name.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)createTableNamed:(NSString *)newTableName withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newTableName</Name>
+					<Abstract>The new table name.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the create.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createTableNamed:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteTableNamed:</TokenIdentifier>
+			<Abstract>Deletes a specifed table asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)deleteTableNamed:(NSString *)tableName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableName</Name>
+					<Abstract>The name of the table to delete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteTableNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteTableNamed:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Deletes a specifed table asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteTableNamed:(NSString *)tableName withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableName</Name>
+					<Abstract>The name of the table to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the delete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteTableNamed:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchEntities:</TokenIdentifier>
+			<Abstract>Fetches the entities for a given table asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableFetchRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchEntities:(WATableFetchRequest *)fetchRequest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>The request to use to fetch the entities.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchEntities:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchEntities:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetches the entities for a given table asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableFetchRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchEntities:(WATableFetchRequest *)fetchRequest withCompletionHandler:(void ( ^ ) ( NSArray *entities , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>The request to use to fetch the entities.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchEntities:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchEntitiesWithContinuation:</TokenIdentifier>
+			<Abstract>Fetches the entities for a given table asynchronously using a result continuation.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableFetchRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchEntitiesWithContinuation:(WATableFetchRequest *)fetchRequest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>The request to use to fetch the entities.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchEntitiesWithContinuation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchEntitiesWithContinuation:usingCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetches the entities for a given table asynchronously using a result continuation and block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchEntitiesWithContinuation:(WATableFetchRequest *)fetchRequest usingCompletionHandler:(void ( ^ ) ( NSArray *entities , WAResultContinuation *resultContinuation , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>The request to use to fetch the entities.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchEntitiesWithContinuation:usingCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchEntitiesWithRequest:</TokenIdentifier>
+			<Abstract>Fetches the entities for a given table asynchronously using a result continuation.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableFetchRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchEntitiesWithRequest:(WATableFetchRequest *)fetchRequest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>The request to use to fetch the entities.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchEntitiesWithRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/fetchEntitiesWithRequest:usingCompletionHandler:</TokenIdentifier>
+			<Abstract>Fetches the entities for a given table asynchronously using a result continuation and block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchEntitiesWithRequest:(WATableFetchRequest *)fetchRequest usingCompletionHandler:(void ( ^ ) ( NSArray *entities , WAResultContinuation *resultContinuation , NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fetchRequest</Name>
+					<Abstract>The request to use to fetch the entities.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchEntitiesWithRequest:usingCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/insertEntity:</TokenIdentifier>
+			<Abstract>Inserts a new entity into an existing table asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)insertEntity:(WATableEntity *)newEntity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newEntity</Name>
+					<Abstract>The new entity to insert.
+	</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent successfully.</Abstract></ReturnValue>
+			<Anchor>//api/name/insertEntity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/insertEntity:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Inserts a new entity into an existing table asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)insertEntity:(WATableEntity *)newEntity withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newEntity</Name>
+					<Abstract>The new entity to insert.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the insert.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent successfully.</Abstract></ReturnValue>
+			<Anchor>//api/name/insertEntity:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/updateEntity:</TokenIdentifier>
+			<Abstract>Updates an existing entity within a table asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)updateEntity:(WATableEntity *)existingEntity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>existingEntity</Name>
+					<Abstract>The entity to update.
+	</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent successfully.</Abstract></ReturnValue>
+			<Anchor>//api/name/updateEntity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/updateEntity:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Updates an existing entity within a table asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)updateEntity:(WATableEntity *)existingEntity withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>existingEntity</Name>
+					<Abstract>The entity to update.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the insert.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent successfully.</Abstract></ReturnValue>
+			<Anchor>//api/name/updateEntity:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/mergeEntity:</TokenIdentifier>
+			<Abstract>Merges an existing entity within a table asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)mergeEntity:(WATableEntity *)existingEntity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>existingEntity</Name>
+					<Abstract>The entity to merge.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent successfully.</Abstract></ReturnValue>
+			<Anchor>//api/name/mergeEntity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/mergeEntity:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Merges an existing entity within a table asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)mergeEntity:(WATableEntity *)existingEntity withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>existingEntity</Name>
+					<Abstract>The entity to merge.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the merge.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent successfully.</Abstract></ReturnValue>
+			<Anchor>//api/name/mergeEntity:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteEntity:</TokenIdentifier>
+			<Abstract>Deletes an existing entity within a table asynchronously.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/WACloudStorageClient/delegate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)deleteEntity:(WATableEntity *)existingEntity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>existingEntity</Name>
+					<Abstract>The entity to delete.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent successfully.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteEntity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudStorageClient/deleteEntity:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Deletes an existing entity within a table asynchronously using a block.</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)deleteEntity:(WATableEntity *)existingEntity withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>existingEntity</Name>
+					<Abstract>The entity to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object called with the results of the delete.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>Returns if the request was sent successfully.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteEntity:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WACloudStorageClient/storageClientWithCredential:</TokenIdentifier>
+			<Abstract>Create a storage client initialized with the given credential.
+	</Abstract>
+			<DeclaredIn>WACloudStorageClient.h</DeclaredIn>			
+			
+			<Declaration>+ (WACloudStorageClient *)storageClientWithCredential:(WAAuthenticationCredential *)credential</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credential</Name>
+					<Abstract>The credentials for Windows Azure storage.
+	</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WACloudStorageClient object.</Abstract></ReturnValue>
+			<Anchor>//api/name/storageClientWithCredential:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

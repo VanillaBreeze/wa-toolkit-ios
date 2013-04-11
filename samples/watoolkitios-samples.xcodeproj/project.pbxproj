@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27E7D771134512EE00F142F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		27E7D772134512EE00F142F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		27E7D773134512EE00F142F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		AA0945571348EEC600AF7EAB /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0945501348EE2900AF7EAB /* libxml2.2.dylib */; };
+		AA2790F913AAC1500042B1FA /* WAConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2790F813AAC1500042B1FA /* WAConfiguration.m */; };
+		AA5EB63213D77DE600E840F1 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5EB63113D77DE600E840F1 /* MyButton.m */; };
+		AA5EB63A13D799C700E840F1 /* EntityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5EB63913D799C600E840F1 /* EntityTableViewCell.m */; };
+		AA5EB63D13D8A09700E840F1 /* UIViewController+ShowError.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5EB63C13D8A09700E840F1 /* UIViewController+ShowError.m */; };
+		AA5EB64A13D8B5FF00E840F1 /* buttonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5EB64613D8B5FF00E840F1 /* buttonImage.png */; };
+		AA5EB64B13D8B5FF00E840F1 /* buttonImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5EB64713D8B5FF00E840F1 /* buttonImage@2x.png */; };
+		AA5EB65813D8EB9F00E840F1 /* AcsRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5EB65613D8EB9900E840F1 /* AcsRegisterViewController.m */; };
+		AA5EB65913D8EB9F00E840F1 /* AcsRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5EB65713D8EB9B00E840F1 /* AcsRegisterViewController.xib */; };
+		AAD6C8F113B29B630098300E /* ServiceCall.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD6C8F013B29B630098300E /* ServiceCall.m */; };
+		AAD6C90613B2ADC10098300E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD6C90413B2ADC10098300E /* RegisterViewController.m */; };
+		AAD6C90713B2ADC10098300E /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD6C90513B2ADC10098300E /* RegisterViewController.xib */; };
+		DE63CEC9162B790400BB8013 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE63CEC8162B790400BB8013 /* Default-568h@2x.png */; };
+		DEE7DDCC148C783700C6A64A /* libwatoolkitios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7DDCB148C783700C6A64A /* libwatoolkitios.a */; };
+		DEEBA6E61408A92100175EB5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEBA6E41408A92100175EB5 /* Default.png */; };
+		DEEBA6E71408A92100175EB5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEBA6E51408A92100175EB5 /* Default@2x.png */; };
+		DEEBA6EA1408A9C900175EB5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEBA6E81408A9C900175EB5 /* Icon.png */; };
+		DEEBA6EB1408A9C900175EB5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEBA6E91408A9C900175EB5 /* Icon@2x.png */; };
+		F4A5D4671374691D00F59CA9 /* Azure_Storage_ClientAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A5D4421374691D00F59CA9 /* Azure_Storage_ClientAppDelegate.m */; };
+		F4A5D4681374691D00F59CA9 /* BlobViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A5D4441374691D00F59CA9 /* BlobViewerController.m */; };
+		F4A5D4691374691D00F59CA9 /* BlobViewerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A5D4451374691D00F59CA9 /* BlobViewerController.xib */; };
+		F4A5D46A1374691D00F59CA9 /* CreateTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A5D4471374691D00F59CA9 /* CreateTableController.m */; };
+		F4A5D46B1374691D00F59CA9 /* CreateTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A5D4481374691D00F59CA9 /* CreateTableController.xib */; };
+		F4A5D46E1374691D00F59CA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4A5D44C1374691D00F59CA9 /* InfoPlist.strings */; };
+		F4A5D46F1374691D00F59CA9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A5D44E1374691D00F59CA9 /* MainWindow.xib */; };
+		F4A5D4701374691D00F59CA9 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A5D4501374691D00F59CA9 /* RootViewController.xib */; };
+		F4A5D4711374691D00F59CA9 /* EntityListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A5D4531374691D00F59CA9 /* EntityListController.m */; };
+		F4A5D4721374691D00F59CA9 /* EntityListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A5D4541374691D00F59CA9 /* EntityListController.xib */; };
+		F4A5D4731374691D00F59CA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A5D4551374691D00F59CA9 /* main.m */; };
+		F4A5D4741374691D00F59CA9 /* ModifyEntityController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A5D4571374691D00F59CA9 /* ModifyEntityController.m */; };
+		F4A5D4751374691D00F59CA9 /* ModifyEntityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A5D4581374691D00F59CA9 /* ModifyEntityController.xib */; };
+		F4A5D4781374691D00F59CA9 /* windows_azure.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4A5D45D1374691D00F59CA9 /* windows_azure.jpg */; };
+		F4A5D4791374691D00F59CA9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A5D45F1374691D00F59CA9 /* RootViewController.m */; };
+		F4A5D47A1374691D00F59CA9 /* StorageTypeSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A5D4611374691D00F59CA9 /* StorageTypeSelector.m */; };
+		F4A5D47B1374691D00F59CA9 /* StorageTypeSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A5D4621374691D00F59CA9 /* StorageTypeSelector.xib */; };
+		F4A5D47C1374691D00F59CA9 /* TableListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A5D4641374691D00F59CA9 /* TableListController.m */; };
+		F4A5D47D1374691D00F59CA9 /* TableListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A5D4651374691D00F59CA9 /* TableListController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AA0945501348EE2900AF7EAB /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		AA2790F713AAC1500042B1FA /* WAConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAConfiguration.h; sourceTree = "<group>"; };
+		AA2790F813AAC1500042B1FA /* WAConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAConfiguration.m; sourceTree = "<group>"; };
+		AA5EB63013D77DE600E840F1 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
+		AA5EB63113D77DE600E840F1 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
+		AA5EB63813D799C600E840F1 /* EntityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityTableViewCell.h; sourceTree = "<group>"; };
+		AA5EB63913D799C600E840F1 /* EntityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityTableViewCell.m; sourceTree = "<group>"; };
+		AA5EB63B13D8A09700E840F1 /* UIViewController+ShowError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ShowError.h"; path = "Configuration/UIViewController+ShowError.h"; sourceTree = "<group>"; };
+		AA5EB63C13D8A09700E840F1 /* UIViewController+ShowError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ShowError.m"; path = "Configuration/UIViewController+ShowError.m"; sourceTree = "<group>"; };
+		AA5EB64613D8B5FF00E840F1 /* buttonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonImage.png; sourceTree = "<group>"; };
+		AA5EB64713D8B5FF00E840F1 /* buttonImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonImage@2x.png"; sourceTree = "<group>"; };
+		AA5EB65513D8EB9800E840F1 /* AcsRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcsRegisterViewController.h; sourceTree = "<group>"; };
+		AA5EB65613D8EB9900E840F1 /* AcsRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcsRegisterViewController.m; sourceTree = "<group>"; };
+		AA5EB65713D8EB9B00E840F1 /* AcsRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AcsRegisterViewController.xib; sourceTree = "<group>"; };
+		AAD6C8EF13B29B630098300E /* ServiceCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceCall.h; sourceTree = "<group>"; };
+		AAD6C8F013B29B630098300E /* ServiceCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceCall.m; sourceTree = "<group>"; };
+		AAD6C90313B2ADC10098300E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		AAD6C90413B2ADC10098300E /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		AAD6C90513B2ADC10098300E /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		DE63CEC8162B790400BB8013 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../../Default-568h@2x.png"; sourceTree = "<group>"; };
+		DEE7DDCB148C783700C6A64A /* libwatoolkitios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwatoolkitios.a; path = "../library/build/Debug-iphoneos/libwatoolkitios.a"; sourceTree = "<group>"; };
+		DEEB91F914211C4E009EE0A8 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		DEEBA6E41408A92100175EB5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DEEBA6E51408A92100175EB5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DEEBA6E81408A9C900175EB5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DEEBA6E91408A9C900175EB5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		F4616AF71374772700D203FD /* WAToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WAToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4A5D43F1374691D00F59CA9 /* watoolkitios-samples.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "watoolkitios-samples.plist"; sourceTree = "<group>"; };
+		F4A5D4401374691D00F59CA9 /* watoolkitios-sample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "watoolkitios-sample-Prefix.pch"; sourceTree = "<group>"; };
+		F4A5D4411374691D00F59CA9 /* Azure_Storage_ClientAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Azure_Storage_ClientAppDelegate.h; sourceTree = "<group>"; };
+		F4A5D4421374691D00F59CA9 /* Azure_Storage_ClientAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Azure_Storage_ClientAppDelegate.m; sourceTree = "<group>"; };
+		F4A5D4431374691D00F59CA9 /* BlobViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobViewerController.h; sourceTree = "<group>"; };
+		F4A5D4441374691D00F59CA9 /* BlobViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlobViewerController.m; sourceTree = "<group>"; };
+		F4A5D4451374691D00F59CA9 /* BlobViewerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlobViewerController.xib; sourceTree = "<group>"; };
+		F4A5D4461374691D00F59CA9 /* CreateTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTableController.h; sourceTree = "<group>"; };
+		F4A5D4471374691D00F59CA9 /* CreateTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTableController.m; sourceTree = "<group>"; };
+		F4A5D4481374691D00F59CA9 /* CreateTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateTableController.xib; sourceTree = "<group>"; };
+		F4A5D44D1374691D00F59CA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4A5D44F1374691D00F59CA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		F4A5D4511374691D00F59CA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		F4A5D4521374691D00F59CA9 /* EntityListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityListController.h; sourceTree = "<group>"; };
+		F4A5D4531374691D00F59CA9 /* EntityListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityListController.m; sourceTree = "<group>"; };
+		F4A5D4541374691D00F59CA9 /* EntityListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntityListController.xib; sourceTree = "<group>"; };
+		F4A5D4551374691D00F59CA9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4A5D4561374691D00F59CA9 /* ModifyEntityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyEntityController.h; sourceTree = "<group>"; };
+		F4A5D4571374691D00F59CA9 /* ModifyEntityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyEntityController.m; sourceTree = "<group>"; };
+		F4A5D4581374691D00F59CA9 /* ModifyEntityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModifyEntityController.xib; sourceTree = "<group>"; };
+		F4A5D45D1374691D00F59CA9 /* windows_azure.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = windows_azure.jpg; sourceTree = "<group>"; };
+		F4A5D45E1374691D00F59CA9 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F4A5D45F1374691D00F59CA9 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F4A5D4601374691D00F59CA9 /* StorageTypeSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageTypeSelector.h; sourceTree = "<group>"; };
+		F4A5D4611374691D00F59CA9 /* StorageTypeSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageTypeSelector.m; sourceTree = "<group>"; };
+		F4A5D4621374691D00F59CA9 /* StorageTypeSelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StorageTypeSelector.xib; sourceTree = "<group>"; };
+		F4A5D4631374691D00F59CA9 /* TableListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableListController.h; sourceTree = "<group>"; };
+		F4A5D4641374691D00F59CA9 /* TableListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableListController.m; sourceTree = "<group>"; };
+		F4A5D4651374691D00F59CA9 /* TableListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableListController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27E7D69D1345129200F142F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE7DDCC148C783700C6A64A /* libwatoolkitios.a in Frameworks */,
+				27E7D771134512EE00F142F7 /* UIKit.framework in Frameworks */,
+				27E7D772134512EE00F142F7 /* Foundation.framework in Frameworks */,
+				27E7D773134512EE00F142F7 /* CoreGraphics.framework in Frameworks */,
+				AA0945571348EEC600AF7EAB /* libxml2.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4616AF71374772700D203FD /* WAToolkit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		273A6966138C10C200B17400 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4A5D4401374691D00F59CA9 /* watoolkitios-sample-Prefix.pch */,
+				F4A5D43F1374691D00F59CA9 /* watoolkitios-samples.plist */,
+				F4A5D44C1374691D00F59CA9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27E7D65D1345101A00F142F7 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				F4A5D43E1374691D00F59CA9 /* Client */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				27E7D65D1345101A00F142F7 /* Samples */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEE7DDCB148C783700C6A64A /* libwatoolkitios.a */,
+				AA0945501348EE2900AF7EAB /* libxml2.2.dylib */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA2790F013AAC11F0042B1FA /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				AA2790F713AAC1500042B1FA /* WAConfiguration.h */,
+				AA2790F813AAC1500042B1FA /* WAConfiguration.m */,
+				AAD6C8EF13B29B630098300E /* ServiceCall.h */,
+				AAD6C8F013B29B630098300E /* ServiceCall.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F4A5D43E1374691D00F59CA9 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				AA2790F013AAC11F0042B1FA /* Configuration */,
+				F4A5D4411374691D00F59CA9 /* Azure_Storage_ClientAppDelegate.h */,
+				F4A5D4421374691D00F59CA9 /* Azure_Storage_ClientAppDelegate.m */,
+				F4A5D44E1374691D00F59CA9 /* MainWindow.xib */,
+				F4A5D45E1374691D00F59CA9 /* RootViewController.h */,
+				F4A5D45F1374691D00F59CA9 /* RootViewController.m */,
+				F4A5D4501374691D00F59CA9 /* RootViewController.xib */,
+				AAD6C90313B2ADC10098300E /* RegisterViewController.h */,
+				AAD6C90413B2ADC10098300E /* RegisterViewController.m */,
+				AAD6C90513B2ADC10098300E /* RegisterViewController.xib */,
+				AA5EB65513D8EB9800E840F1 /* AcsRegisterViewController.h */,
+				AA5EB65613D8EB9900E840F1 /* AcsRegisterViewController.m */,
+				AA5EB65713D8EB9B00E840F1 /* AcsRegisterViewController.xib */,
+				F4A5D4601374691D00F59CA9 /* StorageTypeSelector.h */,
+				F4A5D4611374691D00F59CA9 /* StorageTypeSelector.m */,
+				F4A5D4621374691D00F59CA9 /* StorageTypeSelector.xib */,
+				F4A5D4631374691D00F59CA9 /* TableListController.h */,
+				F4A5D4641374691D00F59CA9 /* TableListController.m */,
+				F4A5D4651374691D00F59CA9 /* TableListController.xib */,
+				F4A5D4461374691D00F59CA9 /* CreateTableController.h */,
+				F4A5D4471374691D00F59CA9 /* CreateTableController.m */,
+				F4A5D4481374691D00F59CA9 /* CreateTableController.xib */,
+				F4A5D4521374691D00F59CA9 /* EntityListController.h */,
+				F4A5D4531374691D00F59CA9 /* EntityListController.m */,
+				F4A5D4541374691D00F59CA9 /* EntityListController.xib */,
+				F4A5D4561374691D00F59CA9 /* ModifyEntityController.h */,
+				F4A5D4571374691D00F59CA9 /* ModifyEntityController.m */,
+				F4A5D4581374691D00F59CA9 /* ModifyEntityController.xib */,
+				F4A5D4431374691D00F59CA9 /* BlobViewerController.h */,
+				F4A5D4441374691D00F59CA9 /* BlobViewerController.m */,
+				F4A5D4451374691D00F59CA9 /* BlobViewerController.xib */,
+				AA5EB63813D799C600E840F1 /* EntityTableViewCell.h */,
+				AA5EB63913D799C600E840F1 /* EntityTableViewCell.m */,
+				AA5EB63B13D8A09700E840F1 /* UIViewController+ShowError.h */,
+				AA5EB63C13D8A09700E840F1 /* UIViewController+ShowError.m */,
+				AA5EB63013D77DE600E840F1 /* MyButton.h */,
+				AA5EB63113D77DE600E840F1 /* MyButton.m */,
+				F4A5D4551374691D00F59CA9 /* main.m */,
+				DEEB91F914211C4E009EE0A8 /* Macros.h */,
+				273A6966138C10C200B17400 /* Supporting Files */,
+				F4A5D45C1374691D00F59CA9 /* Resources */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		F4A5D45C1374691D00F59CA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE63CEC8162B790400BB8013 /* Default-568h@2x.png */,
+				DEEBA6E81408A9C900175EB5 /* Icon.png */,
+				DEEBA6E91408A9C900175EB5 /* Icon@2x.png */,
+				DEEBA6E41408A92100175EB5 /* Default.png */,
+				DEEBA6E51408A92100175EB5 /* Default@2x.png */,
+				AA5EB64613D8B5FF00E840F1 /* buttonImage.png */,
+				AA5EB64713D8B5FF00E840F1 /* buttonImage@2x.png */,
+				F4A5D45D1374691D00F59CA9 /* windows_azure.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27E7D69E1345129200F142F7 /* watoolkitios-samples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E7D6A41345129200F142F7 /* Build configuration list for PBXNativeTarget "watoolkitios-samples" */;
+			buildPhases = (
+				27E7D69B1345129200F142F7 /* Resources */,
+				27E7D69C1345129200F142F7 /* Sources */,
+				27E7D69D1345129200F142F7 /* Frameworks */,
+				DEF0D4501458806B005B920B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watoolkitios-samples";
+			productName = "Azure Storage Client";
+			productReference = F4616AF71374772700D203FD /* WAToolkit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "watoolkitios-samples" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27E7D69E1345129200F142F7 /* watoolkitios-samples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27E7D69B1345129200F142F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A5D4691374691D00F59CA9 /* BlobViewerController.xib in Resources */,
+				F4A5D46B1374691D00F59CA9 /* CreateTableController.xib in Resources */,
+				F4A5D46E1374691D00F59CA9 /* InfoPlist.strings in Resources */,
+				F4A5D46F1374691D00F59CA9 /* MainWindow.xib in Resources */,
+				F4A5D4701374691D00F59CA9 /* RootViewController.xib in Resources */,
+				F4A5D4721374691D00F59CA9 /* EntityListController.xib in Resources */,
+				F4A5D4751374691D00F59CA9 /* ModifyEntityController.xib in Resources */,
+				F4A5D4781374691D00F59CA9 /* windows_azure.jpg in Resources */,
+				F4A5D47B1374691D00F59CA9 /* StorageTypeSelector.xib in Resources */,
+				F4A5D47D1374691D00F59CA9 /* TableListController.xib in Resources */,
+				AAD6C90713B2ADC10098300E /* RegisterViewController.xib in Resources */,
+				AA5EB64A13D8B5FF00E840F1 /* buttonImage.png in Resources */,
+				AA5EB64B13D8B5FF00E840F1 /* buttonImage@2x.png in Resources */,
+				AA5EB65913D8EB9F00E840F1 /* AcsRegisterViewController.xib in Resources */,
+				DEEBA6E61408A92100175EB5 /* Default.png in Resources */,
+				DEEBA6E71408A92100175EB5 /* Default@2x.png in Resources */,
+				DEEBA6EA1408A9C900175EB5 /* Icon.png in Resources */,
+				DEEBA6EB1408A9C900175EB5 /* Icon@2x.png in Resources */,
+				DE63CEC9162B790400BB8013 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DEF0D4501458806B005B920B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27E7D69C1345129200F142F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A5D4671374691D00F59CA9 /* Azure_Storage_ClientAppDelegate.m in Sources */,
+				F4A5D4681374691D00F59CA9 /* BlobViewerController.m in Sources */,
+				F4A5D46A1374691D00F59CA9 /* CreateTableController.m in Sources */,
+				F4A5D4711374691D00F59CA9 /* EntityListController.m in Sources */,
+				F4A5D4731374691D00F59CA9 /* main.m in Sources */,
+				F4A5D4741374691D00F59CA9 /* ModifyEntityController.m in Sources */,
+				F4A5D4791374691D00F59CA9 /* RootViewController.m in Sources */,
+				F4A5D47A1374691D00F59CA9 /* StorageTypeSelector.m in Sources */,
+				F4A5D47C1374691D00F59CA9 /* TableListController.m in Sources */,
+				AA2790F913AAC1500042B1FA /* WAConfiguration.m in Sources */,
+				AAD6C8F113B29B630098300E /* ServiceCall.m in Sources */,
+				AAD6C90613B2ADC10098300E /* RegisterViewController.m in Sources */,
+				AA5EB63213D77DE600E840F1 /* MyButton.m in Sources */,
+				AA5EB63A13D799C700E840F1 /* EntityTableViewCell.m in Sources */,
+				AA5EB63D13D8A09700E840F1 /* UIViewController+ShowError.m in Sources */,
+				AA5EB65813D8EB9F00E840F1 /* AcsRegisterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4A5D44C1374691D00F59CA9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4A5D44D1374691D00F59CA9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F4A5D44E1374691D00F59CA9 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4A5D44F1374691D00F59CA9 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		F4A5D4501374691D00F59CA9 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4A5D4511374691D00F59CA9 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27E7D6A21345129200F142F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Samples/Client/watoolkitios-sample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/**",
+					"/usr/include/libxml2/**",
+				);
+				INFOPLIST_FILE = "Samples/Client/watoolkitios-samples.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = WAToolkit;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		27E7D6A31345129200F142F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Samples/Client/watoolkitios-sample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/**",
+					"/usr/include/libxml2/**",
+				);
+				INFOPLIST_FILE = "Samples/Client/watoolkitios-samples.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = WAToolkit;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27E7D6A41345129200F142F7 /* Build configuration list for PBXNativeTarget "watoolkitios-samples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E7D6A21345129200F142F7 /* Debug */,
+				27E7D6A31345129200F142F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "watoolkitios-samples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

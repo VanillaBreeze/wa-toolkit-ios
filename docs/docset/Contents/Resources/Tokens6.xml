@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WACloudAccessControlClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WACloudAccessControlClient</TokenIdentifier>
+			<Abstract>A class that represents a client used to authenticate against the Windows Azure Access Control Service (ACS).</Abstract>
+			<DeclaredIn>WACloudAccessControlClient.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WACloudAccessControlClient/realm</TokenIdentifier>
+			<Abstract>The ACS realm for the client.</Abstract>
+			<DeclaredIn>WACloudAccessControlClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *realm</Declaration>
+			
+			
+			<Anchor>//api/name/realm</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WACloudAccessControlClient/serviceNamespace</TokenIdentifier>
+			<Abstract>The service namespace for the client.</Abstract>
+			<DeclaredIn>WACloudAccessControlClient.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *serviceNamespace</Declaration>
+			
+			
+			<Anchor>//api/name/serviceNamespace</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WACloudAccessControlClient/accessControlClientForNamespace:realm:</TokenIdentifier>
+			<Abstract>Create an access control client initialized with the given service namespace and realm.</Abstract>
+			<DeclaredIn>WACloudAccessControlClient.h</DeclaredIn>			
+			
+			<Declaration>+ (WACloudAccessControlClient *)accessControlClientForNamespace:(NSString *)serviceNamespace realm:(NSString *)realm</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceNamespace</Name>
+					<Abstract>The ACS service namespace.</Abstract>
+				</Parameter><Parameter>
+					<Name>realm</Name>
+					<Abstract>The ACS realm.
+	</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WACloudAccessControlClient object.</Abstract></ReturnValue>
+			<Anchor>//api/name/accessControlClientForNamespace:realm:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudAccessControlClient/createViewControllerAllowsClose:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Creates a new view controller that contains the authentication user interface.</Abstract>
+			<DeclaredIn>WACloudAccessControlClient.h</DeclaredIn>			
+			
+			<Declaration>- (UIViewController *)createViewControllerAllowsClose:(BOOL)allowsClose withCompletionHandler:(void ( ^ ) ( BOOL authenticated ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>allowsClose</Name>
+					<Abstract>Determines if the user interface can be closed.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>The completion handler is called when the process is completed and contains if the user is authenticated or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>A UIViewController to display the authentication view.</Abstract></ReturnValue>
+			<Anchor>//api/name/createViewControllerAllowsClose:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudAccessControlClient/showInViewController:allowsClose:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Present the authentication user interface in a given controler.</Abstract>
+			<DeclaredIn>WACloudAccessControlClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)showInViewController:(UIViewController *)controller allowsClose:(BOOL)allowsClose withCompletionHandler:(void ( ^ ) ( BOOL authenticated ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract>The controller to display the view.</Abstract>
+				</Parameter><Parameter>
+					<Name>allowsClose</Name>
+					<Abstract>Determines if the user interface can be closed.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>The completion handler is called when the process is completed and contains if the user is authenticated or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showInViewController:allowsClose:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WACloudAccessControlClient/sharedToken</TokenIdentifier>
+			<Abstract>The security token that was set when the user authenticated through a call to requestAccessInViewController:withCompletionHandler:.</Abstract>
+			<DeclaredIn>WACloudAccessControlClient.h</DeclaredIn>			
+			
+			<Declaration>+ (WACloudAccessToken *)sharedToken</Declaration>
+			
+			
+			<Anchor>//api/name/sharedToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WACloudAccessControlClient/logOut</TokenIdentifier>
+			<Abstract>Instructs the client to release the shared token.</Abstract>
+			<DeclaredIn>WACloudAccessControlClient.h</DeclaredIn>			
+			
+			<Declaration>+ (void)logOut</Declaration>
+			
+			
+			<Anchor>//api/name/logOut</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

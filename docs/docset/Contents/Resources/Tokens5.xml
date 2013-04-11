@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WABlobFetchRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WABlobFetchRequest</TokenIdentifier>
+			<Abstract>A class that represents a Windows Azure Blob Storage fetch request.</Abstract>
+			<DeclaredIn>WABlobFetchRequest.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WABlobFetchRequest/container</TokenIdentifier>
+			<Abstract>The container for the fetch request.</Abstract>
+			<DeclaredIn>WABlobFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) WABlobContainer *container</Declaration>
+			
+			
+			<Anchor>//api/name/container</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WABlobFetchRequest/prefix</TokenIdentifier>
+			<Abstract>Filters the results to return only blobs whose names begin with the specified prefix.</Abstract>
+			<DeclaredIn>WABlobFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *prefix</Declaration>
+			
+			
+			<Anchor>//api/name/prefix</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WABlobFetchRequest/useFlatListing</TokenIdentifier>
+			<Abstract>A value indicating whether the blob listing operation will list all blobs in a container in a flat listing, or whether it will list blobs hierarchically, by virtual directory.</Abstract>
+			<DeclaredIn>WABlobFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL useFlatListing</Declaration>
+			
+			
+			<Anchor>//api/name/useFlatListing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WABlobFetchRequest/maxResult</TokenIdentifier>
+			<Abstract>Specifies the maximum number of blobs to return, including all BlobPrefix elements. If the request does not specify maxresults or specifies a value greater than 5,000, the server will return up to 5,000 items.</Abstract>
+			<DeclaredIn>WABlobFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger maxResult</Declaration>
+			
+			
+			<Anchor>//api/name/maxResult</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WABlobFetchRequest/resultContinuation</TokenIdentifier>
+			<Abstract>The continuation to use in the fetch request.</Abstract>
+			<DeclaredIn>WABlobFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) WAResultContinuation *resultContinuation</Declaration>
+			
+			
+			<Anchor>//api/name/resultContinuation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WABlobFetchRequest/fetchRequestWithContainer:</TokenIdentifier>
+			<Abstract>Create a new WABlobFetchRequest with a container name.</Abstract>
+			<DeclaredIn>WABlobFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (WABlobFetchRequest *)fetchRequestWithContainer:(WABlobContainer *)container</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract>The container for the fetch request.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WABlobFetchRequest object.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchRequestWithContainer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WABlobFetchRequest/fetchRequestWithContainer:resultContinuation:</TokenIdentifier>
+			<Abstract>Create a new WABlobFetchRequest with a container name.</Abstract>
+			<DeclaredIn>WABlobFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (WABlobFetchRequest *)fetchRequestWithContainer:(WABlobContainer *)container resultContinuation:(WAResultContinuation *)resultContinuation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract>The container for the fetch request.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The continuation to use in the fetch request.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WABlobFetchRequest object.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchRequestWithContainer:resultContinuation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

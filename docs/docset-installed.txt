@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/scottdensmore/Library/Developer/Shared/Documentation/DocSets/com.microsoft.WAToolkit.docset
+Time: 2011-12-15 21:47:33 +0000

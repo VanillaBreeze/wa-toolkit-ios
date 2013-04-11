@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/WAAuthenticationDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/WAAuthenticationDelegate</TokenIdentifier>
+			<Abstract>When used with the proxy service, the authentication delegate returns indication whether the login was successful.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WAAuthenticationDelegate/loginDidSucceed</TokenIdentifier>
+			<Abstract>Sent to the delegate when the login succeeds for the proxy service.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+			<Declaration>- (void)loginDidSucceed</Declaration>
+			
+			
+			<Anchor>//api/name/loginDidSucceed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WAAuthenticationDelegate/loginDidFailWithError:</TokenIdentifier>
+			<Abstract>Sent to the delegate when the login succeeds for the proxy service.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+			<Declaration>- (void)loginDidFailWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract>An NSError object describing the error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loginDidFailWithError:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

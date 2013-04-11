@@ -1,0 +1,1129 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>WABlob Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 737)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">WAToolkit </a></h1>
+				<a id="developerHome" href="../index.html">Microsoft</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WABlob Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/DEPRECATED_ATTRIBUTE">&nbsp;&nbsp;&nbsp;&nbsp;DEPRECATED_ATTRIBUTE</option>
+	
+	<option value="//api/name/URL">&nbsp;&nbsp;&nbsp;&nbsp;URL</option>
+	
+	<option value="//api/name/containerName">&nbsp;&nbsp;&nbsp;&nbsp;containerName</option>
+	
+	<option value="//api/name/contentData">&nbsp;&nbsp;&nbsp;&nbsp;contentData</option>
+	
+	<option value="//api/name/contentType">&nbsp;&nbsp;&nbsp;&nbsp;contentType</option>
+	
+	<option value="//api/name/metadata">&nbsp;&nbsp;&nbsp;&nbsp;metadata</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	<option value="//api/name/properties">&nbsp;&nbsp;&nbsp;&nbsp;properties</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initBlobWithName:URL:">&nbsp;&nbsp;&nbsp;&nbsp;- initBlobWithName:URL:</option>
+	
+	<option value="//api/name/initBlobWithName:URL:container:">&nbsp;&nbsp;&nbsp;&nbsp;- initBlobWithName:URL:container:</option>
+	
+	<option value="//api/name/initBlobWithName:URL:container:properties:">&nbsp;&nbsp;&nbsp;&nbsp;- initBlobWithName:URL:container:properties:</option>
+	
+	<option value="//api/name/initBlobWithName:URL:containerName:">&nbsp;&nbsp;&nbsp;&nbsp;- initBlobWithName:URL:containerName:</option>
+	
+	<option value="//api/name/initBlobWithName:URL:containerName:properties:">&nbsp;&nbsp;&nbsp;&nbsp;- initBlobWithName:URL:containerName:properties:</option>
+	
+	<option value="//api/name/removeMetadataForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- removeMetadataForKey:</option>
+	
+	<option value="//api/name/setValue:forMetadataKey:">&nbsp;&nbsp;&nbsp;&nbsp;- setValue:forMetadataKey:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/DEPRECATED_ATTRIBUTE">DEPRECATED_ATTRIBUTE</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URL">URL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/containerName">containerName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentData">contentData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentType">contentType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/metadata">metadata</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/properties">properties</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initBlobWithName:URL:">initBlobWithName:URL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initBlobWithName:URL:container:">initBlobWithName:URL:container:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initBlobWithName:URL:container:properties:">initBlobWithName:URL:container:properties:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initBlobWithName:URL:containerName:">initBlobWithName:URL:containerName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initBlobWithName:URL:containerName:properties:">initBlobWithName:URL:containerName:properties:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeMetadataForKey:">removeMetadataForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setValue:forMetadataKey:">setValue:forMetadataKey:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="WABlob Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WABlob Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">WABlob.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A class that represents a Windows Azure Blob.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/name">name</a> of the blob.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/URL">&nbsp;&nbsp;URL</a></code>
+		<span class="tooltip"><p>The address that identifies the blob.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentData">&nbsp;&nbsp;contentData</a></code>
+		<span class="tooltip"><p>The content data for the blob.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentType">&nbsp;&nbsp;contentType</a></code>
+		<span class="tooltip"><p>The content type for the blob.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/DEPRECATED_ATTRIBUTE">&nbsp;&nbsp;DEPRECATED_ATTRIBUTE</a></code>
+		<span class="tooltip"><p>A <a href="../Classes/WABlobContainer.html">WABlobContainer</a> object representing the blob&rsquo;s container.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/containerName">&nbsp;&nbsp;containerName</a></code>
+		<span class="tooltip"><p>The container <a href="#//api/name/name">name</a> of the blob.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/metadata">&nbsp;&nbsp;metadata</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/metadata">metadata</a> for the container.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/properties">&nbsp;&nbsp;properties</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/properties">properties</a> for the blob.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setValue:forMetadataKey:">&ndash;&nbsp;setValue:forMetadataKey:</a></code>
+		<span class="tooltip"><p>Sets a value to the container <a href="#//api/name/metadata">metadata</a> dictionary.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeMetadataForKey:">&ndash;&nbsp;removeMetadataForKey:</a></code>
+		<span class="tooltip"><p>Removes a given key and its associated value from the dictionary.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initBlobWithName:URL:">&ndash;&nbsp;initBlobWithName:URL:</a></code>
+		<span class="tooltip"><p>Initializes a newly created <a href="WABlob.html">WABlob</a> with an <a href="#//api/name/name">name</a> and address <a href="#//api/name/URL">URL</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initBlobWithName:URL:container:">&ndash;&nbsp;initBlobWithName:URL:container:</a></code>
+		<span class="tooltip"><p>Initializes a newly created <a href="WABlob.html">WABlob</a> with a <a href="#//api/name/name">name</a>, address <a href="#//api/name/URL">URL</a> and a container.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initBlobWithName:URL:containerName:">&ndash;&nbsp;initBlobWithName:URL:containerName:</a></code>
+		<span class="tooltip"><p>Initializes a newly created <a href="WABlob.html">WABlob</a> with a <a href="#//api/name/name">name</a>, address <a href="#//api/name/URL">URL</a> and a container.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initBlobWithName:URL:container:properties:">&ndash;&nbsp;initBlobWithName:URL:container:properties:</a></code>
+		<span class="tooltip"><p>Initializes a newly created <a href="WABlob.html">WABlob</a> with a <a href="#//api/name/name">name</a>, address <a href="#//api/name/URL">URL</a>, the container and <a href="#//api/name/properties">properties</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initBlobWithName:URL:containerName:properties:">&ndash;&nbsp;initBlobWithName:URL:containerName:properties:</a></code>
+		<span class="tooltip"><p>Initializes a newly created <a href="WABlob.html">WABlob</a> with a <a href="#//api/name/name">name</a>, address <a href="#//api/name/URL">URL</a>, the container and <a href="#//api/name/properties">properties</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/DEPRECATED_ATTRIBUTE" title="DEPRECATED_ATTRIBUTE"></a>
+	<h3 class="subsubtitle method-title">DEPRECATED_ATTRIBUTE</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A <a href="../Classes/WABlobContainer.html">WABlobContainer</a> object representing the blob&rsquo;s container.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (readonly) WABlobContainer *DEPRECATED_ATTRIBUTE</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@deprecated This will be deprecated in the next release.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WABlobContainer.html">WABlobContainer</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/URL" title="URL"></a>
+	<h3 class="subsubtitle method-title">URL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The address that identifies the blob.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSURL *URL</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/containerName" title="containerName"></a>
+	<h3 class="subsubtitle method-title">containerName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The container <a href="#//api/name/name">name</a> of the blob.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *containerName</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentData" title="contentData"></a>
+	<h3 class="subsubtitle method-title">contentData</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The content data for the blob.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSData *contentData</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentType" title="contentType"></a>
+	<h3 class="subsubtitle method-title">contentType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The content type for the blob.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *contentType</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/metadata" title="metadata"></a>
+	<h3 class="subsubtitle method-title">metadata</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/metadata">metadata</a> for the container.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSDictionary *metadata</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/name">name</a> of the blob.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *name</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/properties" title="properties"></a>
+	<h3 class="subsubtitle method-title">properties</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/properties">properties</a> for the blob.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSDictionary *properties</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initBlobWithName:URL:" title="initBlobWithName:URL:"></a>
+	<h3 class="subsubtitle method-title">initBlobWithName:URL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a newly created <a href="WABlob.html">WABlob</a> with an <a href="#//api/name/name">name</a> and address <a href="#//api/name/URL">URL</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initBlobWithName:(NSString *)<em>name</em> URL:(NSString *)<em>URL</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The <a href="#//api/name/name">name</a> of the blob.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The address of the blob.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly initialized <a href="WABlob.html">WABlob</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initBlobWithName:URL:container:" title="initBlobWithName:URL:container:"></a>
+	<h3 class="subsubtitle method-title">initBlobWithName:URL:container:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a newly created <a href="WABlob.html">WABlob</a> with a <a href="#//api/name/name">name</a>, address <a href="#//api/name/URL">URL</a> and a container.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initBlobWithName:(NSString *)<em>name</em> URL:(NSString *)<em>URL</em> container:(WABlobContainer *)<em>container</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The <a href="#//api/name/name">name</a> of the blob.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The address of the blob.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>container</em></dt>
+			<dd><p>The container for the blob.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly initialized <a href="WABlob.html">WABlob</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WABlobContainer.html">WABlobContainer</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initBlobWithName:URL:container:properties:" title="initBlobWithName:URL:container:properties:"></a>
+	<h3 class="subsubtitle method-title">initBlobWithName:URL:container:properties:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a newly created <a href="WABlob.html">WABlob</a> with a <a href="#//api/name/name">name</a>, address <a href="#//api/name/URL">URL</a>, the container and <a href="#//api/name/properties">properties</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initBlobWithName:(NSString *)<em>name</em> URL:(NSString *)<em>URL</em> container:(WABlobContainer *)<em>container</em> properties:(NSDictionary *)<em>properties</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The <a href="#//api/name/name">name</a> of the blob.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The address of the blob.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>container</em></dt>
+			<dd><p>The container for the blob.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>properties</em></dt>
+			<dd><p>The <a href="#//api/name/properties">properties</a> for the blob.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly initialized <a href="WABlob.html">WABlob</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/WABlobContainer.html">WABlobContainer</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initBlobWithName:URL:containerName:" title="initBlobWithName:URL:containerName:"></a>
+	<h3 class="subsubtitle method-title">initBlobWithName:URL:containerName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a newly created <a href="WABlob.html">WABlob</a> with a <a href="#//api/name/name">name</a>, address <a href="#//api/name/URL">URL</a> and a container.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initBlobWithName:(NSString *)<em>name</em> URL:(NSString *)<em>URL</em> containerName:(NSString *)<em>containerName</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The <a href="#//api/name/name">name</a> of the blob.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The address of the blob.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>containerName</em></dt>
+			<dd><p>The container <a href="#//api/name/name">name</a> for the blob.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly initialized <a href="WABlob.html">WABlob</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initBlobWithName:URL:containerName:properties:" title="initBlobWithName:URL:containerName:properties:"></a>
+	<h3 class="subsubtitle method-title">initBlobWithName:URL:containerName:properties:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a newly created <a href="WABlob.html">WABlob</a> with a <a href="#//api/name/name">name</a>, address <a href="#//api/name/URL">URL</a>, the container and <a href="#//api/name/properties">properties</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initBlobWithName:(NSString *)<em>name</em> URL:(NSString *)<em>URL</em> containerName:(NSString *)<em>containerName</em> properties:(NSDictionary *)<em>properties</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The <a href="#//api/name/name">name</a> of the blob.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The address of the blob.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>containerName</em></dt>
+			<dd><p>The container <a href="#//api/name/name">name</a> for the blob.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>properties</em></dt>
+			<dd><p>The <a href="#//api/name/properties">properties</a> for the blob.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly initialized <a href="WABlob.html">WABlob</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeMetadataForKey:" title="removeMetadataForKey:"></a>
+	<h3 class="subsubtitle method-title">removeMetadataForKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes a given key and its associated value from the dictionary.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeMetadataForKey:(NSString *)<em>key</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The key to remove.</p>
+
+<p>@discussion Does nothing if key does not exist.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setValue:forMetadataKey:" title="setValue:forMetadataKey:"></a>
+	<h3 class="subsubtitle method-title">setValue:forMetadataKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets a value to the container <a href="#//api/name/metadata">metadata</a> dictionary.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setValue:(NSString *)<em>value</em> forMetadataKey:(NSString *)<em>key</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>The value for the key.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The key for the value.</p>
+
+<p>@discussion Raises an NSInvalidArgumentException if aKey or anObject is nil. If you need to represent a nil value in the dictionary, use NSNull. If aKey already exists in the dictionary, the dictionary’s previous value object for that key is sent a release message and anObject takes its place.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WABlob.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2011 Microsoft. All rights reserved. (Last updated: 2011-12-15)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 737)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

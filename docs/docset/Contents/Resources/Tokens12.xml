@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WAQueueMessageFetchRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessageFetchRequest</TokenIdentifier>
+			<Abstract>A class that represents a Windows Azure Queue Message Container Storage fetch request.</Abstract>
+			<DeclaredIn>WAQueueMessageFetchRequest.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAQueueMessageFetchRequest/queueName</TokenIdentifier>
+			<Abstract>The name of the queue to fetch</Abstract>
+			<DeclaredIn>WAQueueMessageFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *queueName</Declaration>
+			
+			
+			<Anchor>//api/name/queueName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAQueueMessageFetchRequest/fetchCount</TokenIdentifier>
+			<Abstract>A nonzero integer value that specifies the number of messages to retrieve from the queue, up to a maximum of 32. By default, a single message is retrieved from the queue with this operation.</Abstract>
+			<DeclaredIn>WAQueueMessageFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger fetchCount</Declaration>
+			
+			
+			<Anchor>//api/name/fetchCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAQueueMessageFetchRequest/visibilityTimeout</TokenIdentifier>
+			<Abstract>Specifies the new visibility timeout value, in seconds, relative to server time. The new value must be larger than or equal to 0, and cannot be larger than 7 days, or larger than 2 hours on REST protocol versions prior to version 2011-08-18. The visibility timeout of a message can be set to a value later than the expiry time.</Abstract>
+			<DeclaredIn>WAQueueMessageFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger visibilityTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/visibilityTimeout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WAQueueMessageFetchRequest/fetchRequestWithQueueName:</TokenIdentifier>
+			<Abstract>Create a new WAQueueFetchRequest with a result continuation.</Abstract>
+			<DeclaredIn>WAQueueMessageFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (WAQueueMessageFetchRequest *)fetchRequestWithQueueName:(NSString *)queueName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WAQueueFetchRequest object.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchRequestWithQueueName:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WACloudAccessToken.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WACloudAccessToken</TokenIdentifier>
+			<Abstract>A class that represents an access token when authenticated from Windows Azure Access Control Service (ACS).</Abstract>
+			<DeclaredIn>WACloudAccessToken.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WACloudAccessToken/appliesTo</TokenIdentifier>
+			<Abstract>The audeince for the token.</Abstract>
+			<DeclaredIn>WACloudAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *appliesTo</Declaration>
+			
+			
+			<Anchor>//api/name/appliesTo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WACloudAccessToken/tokenType</TokenIdentifier>
+			<Abstract>The token type.</Abstract>
+			<DeclaredIn>WACloudAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *tokenType</Declaration>
+			
+			
+			<Anchor>//api/name/tokenType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WACloudAccessToken/expires</TokenIdentifier>
+			<Abstract>The expiration time for the token.</Abstract>
+			<DeclaredIn>WACloudAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSInteger expires</Declaration>
+			
+			
+			<Anchor>//api/name/expires</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WACloudAccessToken/created</TokenIdentifier>
+			<Abstract>The create time for the token.</Abstract>
+			<DeclaredIn>WACloudAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSInteger created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WACloudAccessToken/expireDate</TokenIdentifier>
+			<Abstract>The expiration date for the token.</Abstract>
+			<DeclaredIn>WACloudAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDate *expireDate</Declaration>
+			
+			
+			<Anchor>//api/name/expireDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WACloudAccessToken/createDate</TokenIdentifier>
+			<Abstract>	The creation date for the token.</Abstract>
+			<DeclaredIn>WACloudAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDate *createDate</Declaration>
+			
+			
+			<Anchor>//api/name/createDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WACloudAccessToken/securityToken</TokenIdentifier>
+			<Abstract>The security token to sign requests.</Abstract>
+			<DeclaredIn>WACloudAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *securityToken</Declaration>
+			
+			
+			<Anchor>//api/name/securityToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WACloudAccessToken/identityProvider</TokenIdentifier>
+			<Abstract>The identity provider for the token</Abstract>
+			<DeclaredIn>WACloudAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *identityProvider</Declaration>
+			
+			
+			<Anchor>//api/name/identityProvider</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WACloudAccessToken/claims</TokenIdentifier>
+			<Abstract>The claims associated with the token.</Abstract>
+			<DeclaredIn>WACloudAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *claims</Declaration>
+			
+			
+			<Anchor>//api/name/claims</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WACloudAccessToken/signRequest:</TokenIdentifier>
+			<Abstract>Signs the request and adds the OAuth token.</Abstract>
+			<DeclaredIn>WACloudAccessToken.h</DeclaredIn>			
+			
+			<Declaration>- (void)signRequest:(NSMutableURLRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract>The request to sign.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/signRequest:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

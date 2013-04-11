@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WAQueueFetchRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WAQueueFetchRequest</TokenIdentifier>
+			<Abstract>A class that represents a Windows Azure Queue Storage fetch request.</Abstract>
+			<DeclaredIn>WAQueueFetchRequest.h</DeclaredIn>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAQueueFetchRequest/queueName</TokenIdentifier>
+			<Abstract>The name of the queue to fetch</Abstract>
+			<DeclaredIn>WAQueueFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *queueName</Declaration>
+			
+			
+			<Anchor>//api/name/queueName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAQueueFetchRequest/prefix</TokenIdentifier>
+			<Abstract>Filters the results to return only queus whose names begin with the specified prefix.</Abstract>
+			<DeclaredIn>WAQueueFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *prefix</Declaration>
+			
+			
+			<Anchor>//api/name/prefix</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAQueueFetchRequest/maxResult</TokenIdentifier>
+			<Abstract>Specifies the maximum number of queues to return. If the request does not specify maxresults or specifies a value greater than 5,000, the server will return up to 5,000 items.</Abstract>
+			<DeclaredIn>WAQueueFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger maxResult</Declaration>
+			
+			
+			<Anchor>//api/name/maxResult</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAQueueFetchRequest/resultContinuation</TokenIdentifier>
+			<Abstract>The continuation to use in the fetch request.</Abstract>
+			<DeclaredIn>WAQueueFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) WAResultContinuation *resultContinuation</Declaration>
+			
+			
+			<Anchor>//api/name/resultContinuation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WAQueueFetchRequest/fetchRequest</TokenIdentifier>
+			<Abstract>Create a new WAQueueFetchRequest.</Abstract>
+			<DeclaredIn>WAQueueFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (WAQueueFetchRequest *)fetchRequest</Declaration>
+			
+			<ReturnValue><Abstract>The newly initialized WAQueueFetchRequest object.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WAQueueFetchRequest/fetchRequestWithResultContinuation:</TokenIdentifier>
+			<Abstract>Create a new WAQueueFetchRequest with a result continuation.</Abstract>
+			<DeclaredIn>WAQueueFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (WAQueueFetchRequest *)fetchRequestWithResultContinuation:(WAResultContinuation *)resultContinuation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The continuation to use in the fetch request.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WAQueueFetchRequest object.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchRequestWithResultContinuation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

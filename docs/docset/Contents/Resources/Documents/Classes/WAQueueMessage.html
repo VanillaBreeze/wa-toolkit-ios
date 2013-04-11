@@ -1,0 +1,757 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>WAQueueMessage Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 737)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">WAToolkit </a></h1>
+				<a id="developerHome" href="../index.html">Microsoft</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">WAQueueMessage Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/dequeueCount">&nbsp;&nbsp;&nbsp;&nbsp;dequeueCount</option>
+	
+	<option value="//api/name/expirationTime">&nbsp;&nbsp;&nbsp;&nbsp;expirationTime</option>
+	
+	<option value="//api/name/insertionTime">&nbsp;&nbsp;&nbsp;&nbsp;insertionTime</option>
+	
+	<option value="//api/name/messageId">&nbsp;&nbsp;&nbsp;&nbsp;messageId</option>
+	
+	<option value="//api/name/messageText">&nbsp;&nbsp;&nbsp;&nbsp;messageText</option>
+	
+	<option value="//api/name/popReceipt">&nbsp;&nbsp;&nbsp;&nbsp;popReceipt</option>
+	
+	<option value="//api/name/timeNextVisible">&nbsp;&nbsp;&nbsp;&nbsp;timeNextVisible</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:">&nbsp;&nbsp;&nbsp;&nbsp;- initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:</option>
+	
+	<option value="//api/name/initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:dequeueCount:">&nbsp;&nbsp;&nbsp;&nbsp;- initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:dequeueCount:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dequeueCount">dequeueCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/expirationTime">expirationTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertionTime">insertionTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messageId">messageId</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messageText">messageText</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/popReceipt">popReceipt</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeNextVisible">timeNextVisible</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:">initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:dequeueCount:">initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:dequeueCount:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="WAQueueMessage Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">WAQueueMessage Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">WAQueueMessage.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A class that represents a message in a Windows Azure Queue.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messageId">&nbsp;&nbsp;messageId</a></code>
+		<span class="tooltip"><p>The identifier for the message in the queue.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertionTime">&nbsp;&nbsp;insertionTime</a></code>
+		<span class="tooltip"><p>The time the message was inserted into the queue.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/expirationTime">&nbsp;&nbsp;expirationTime</a></code>
+		<span class="tooltip"><p>The expieration time for the message in the queue.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/popReceipt">&nbsp;&nbsp;popReceipt</a></code>
+		<span class="tooltip"><p>The message&rsquo;s pop receipt.
+The pop receipt is an opaque value that indicates that the message has been retrieved and can be used to delete it.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeNextVisible">&nbsp;&nbsp;timeNextVisible</a></code>
+		<span class="tooltip"><p>The time that the message will next be visible.
+The property is updated when a message is retrieved from the queue. It indicates when a message will become visible again to other clients, if it is not first deleted by the client that retrieved it.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messageText">&nbsp;&nbsp;messageText</a></code>
+		<span class="tooltip"><p>The message text.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dequeueCount">&nbsp;&nbsp;dequeueCount</a></code>
+		<span class="tooltip"><p>The number of times this message has been dequeued.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:">&ndash;&nbsp;initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:</a></code>
+		<span class="tooltip"><p>Initializes a newly created <a href="WAQueueMessage.html">WAQueueMessage</a> with an identifier, insertion time, experiation time, pop receipt, next visible time and message text.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:dequeueCount:">&ndash;&nbsp;initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:dequeueCount:</a></code>
+		<span class="tooltip"><p>Initializes a newly created <a href="WAQueueMessage.html">WAQueueMessage</a> with an identifier, insertion time, experiation time, pop receipt, next visible time and message text.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dequeueCount" title="dequeueCount"></a>
+	<h3 class="subsubtitle method-title">dequeueCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of times this message has been dequeued.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSInteger dequeueCount</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WAQueueMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/expirationTime" title="expirationTime"></a>
+	<h3 class="subsubtitle method-title">expirationTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The expieration time for the message in the queue.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *expirationTime</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WAQueueMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertionTime" title="insertionTime"></a>
+	<h3 class="subsubtitle method-title">insertionTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The time the message was inserted into the queue.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *insertionTime</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WAQueueMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messageId" title="messageId"></a>
+	<h3 class="subsubtitle method-title">messageId</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The identifier for the message in the queue.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *messageId</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WAQueueMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messageText" title="messageText"></a>
+	<h3 class="subsubtitle method-title">messageText</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The message text.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (copy) NSString *messageText</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WAQueueMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/popReceipt" title="popReceipt"></a>
+	<h3 class="subsubtitle method-title">popReceipt</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The message&rsquo;s pop receipt.
+The pop receipt is an opaque value that indicates that the message has been retrieved and can be used to delete it.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *popReceipt</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WAQueueMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeNextVisible" title="timeNextVisible"></a>
+	<h3 class="subsubtitle method-title">timeNextVisible</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The time that the message will next be visible.
+The property is updated when a message is retrieved from the queue. It indicates when a message will become visible again to other clients, if it is not first deleted by the client that retrieved it.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *timeNextVisible</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WAQueueMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:" title="initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:"></a>
+	<h3 class="subsubtitle method-title">initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a newly created <a href="WAQueueMessage.html">WAQueueMessage</a> with an identifier, insertion time, experiation time, pop receipt, next visible time and message text.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initQueueMessageWithMessageId:(NSString *)<em>messageId</em> insertionTime:(NSString *)<em>insertionTime</em> expirationTime:(NSString *)<em>expirationTime</em> popReceipt:(NSString *)<em>popReceipt</em> timeNextVisible:(NSString *)<em>timeNextVisible</em> messageText:(NSString *)<em>messageText</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageId</em></dt>
+			<dd><p>The message identifier.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>insertionTime</em></dt>
+			<dd><p>The insertion time for the message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>expirationTime</em></dt>
+			<dd><p>The expiration time for the message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>popReceipt</em></dt>
+			<dd><p>the pop receipt for the message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>timeNextVisible</em></dt>
+			<dd><p>The next visible time for the message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageText</em></dt>
+			<dd><p>The message text.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly initialized <a href="WAQueueMessage.html">WAQueueMessage</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WAQueueMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:dequeueCount:" title="initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:dequeueCount:"></a>
+	<h3 class="subsubtitle method-title">initQueueMessageWithMessageId:insertionTime:expirationTime:popReceipt:timeNextVisible:messageText:dequeueCount:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a newly created <a href="WAQueueMessage.html">WAQueueMessage</a> with an identifier, insertion time, experiation time, pop receipt, next visible time and message text.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initQueueMessageWithMessageId:(NSString *)<em>messageId</em> insertionTime:(NSString *)<em>insertionTime</em> expirationTime:(NSString *)<em>expirationTime</em> popReceipt:(NSString *)<em>popReceipt</em> timeNextVisible:(NSString *)<em>timeNextVisible</em> messageText:(NSString *)<em>messageText</em> dequeueCount:(NSInteger)<em>dequeueCount</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageId</em></dt>
+			<dd><p>The message identifier.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>insertionTime</em></dt>
+			<dd><p>The insertion time for the message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>expirationTime</em></dt>
+			<dd><p>The expiration time for the message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>popReceipt</em></dt>
+			<dd><p>the pop receipt for the message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>timeNextVisible</em></dt>
+			<dd><p>The next visible time for the message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageText</em></dt>
+			<dd><p>The message text.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dequeueCount</em></dt>
+			<dd><p>The dequeue count.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly initialized <a href="WAQueueMessage.html">WAQueueMessage</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">WAQueueMessage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2011 Microsoft. All rights reserved. (Last updated: 2011-12-15)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 737)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/WACloudStorageClientDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/WACloudStorageClientDelegate</TokenIdentifier>
+			<Abstract>The WACloudStorageClientDelegate protocol defines methods that a delegate of WACloudStorageClient object can optionally implement when a request is made.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFailRequest:withError:</TokenIdentifier>
+			<Abstract>Sent if a URL request failed.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFailRequest:(NSURLRequest *)request withError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>request</Name>
+					<Abstract>The request that failed.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract>The error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFailRequest:withError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchBlobContainers:</TokenIdentifier>
+			<Abstract>Sent when the client successfully returns a list of blob containers.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchBlobContainers:(NSArray *)containers</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>containers</Name>
+					<Abstract>The array of WABlobContainer objects returned from the request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchBlobContainers:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchBlobContainers:withResultContinuation:</TokenIdentifier>
+			<Abstract>Sent when the client successfully returns a list of blob containers and the result continuation that you can use when making future requests to get the next set of containers.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchBlobContainers:(NSArray *)containers withResultContinuation:(WAResultContinuation *)resultContinuation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>containers</Name>
+					<Abstract>The array of WABlobContainer objects returned from the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The result continuation that contains the marker to use for the next request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchBlobContainers:withResultContinuation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchBlobContainer:</TokenIdentifier>
+			<Abstract>Sent when the client successfully returns a blob container.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchBlobContainer:(WABlobContainer *)container</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>container</Name>
+					<Abstract>The container the client requested.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchBlobContainer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didAddBlobContainerNamed:</TokenIdentifier>
+			<Abstract>Sent when the client successsfully adds a new blob container.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didAddBlobContainerNamed:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract>The name that was added.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didAddBlobContainerNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didAddBlobContainer:</TokenIdentifier>
+			<Abstract>Sent when the client successsfully adds a new blob container.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didAddBlobContainer:(WABlobContainer *)container</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>container</Name>
+					<Abstract>The container that was added.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didAddBlobContainer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didDeleteBlobContainer:</TokenIdentifier>
+			<Abstract>Sent when the client successfully removes an existing blob container.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didDeleteBlobContainer:(WABlobContainer *)container</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>container</Name>
+					<Abstract>The container that was deleted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didDeleteBlobContainer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didDeleteBlobContainerNamed:</TokenIdentifier>
+			<Abstract>Sent when the client successfully removes an existing blob container.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didDeleteBlobContainerNamed:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract>The name of the container that was deleted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didDeleteBlobContainerNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchBlobs:inContainer:</TokenIdentifier>
+			<Abstract>Sent when the client successfully returns blobs from an existing container.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlob</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchBlobs:(NSArray *)blobs inContainer:(WABlobContainer *)container</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>blobs</Name>
+					<Abstract>The array of WABlob objects returned from the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>container</Name>
+					<Abstract>The WABlobContainer object for the blobs.
+
+@deprecated Now use WACloudStorageClientDelegate#storageClient:didFetchBlobs:inContainer:withResultContinuation:</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchBlobs:inContainer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchBlobs:inContainer:withResultContinuation:</TokenIdentifier>
+			<Abstract>Sent when the client successfully returns blobs from an existing container.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlob</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchBlobs:(NSArray *)blobs inContainer:(WABlobContainer *)container withResultContinuation:(WAResultContinuation *)resultContinuation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>blobs</Name>
+					<Abstract>The array of WABlob objects returned from the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>container</Name>
+					<Abstract>The WABlobContainer object for the blobs.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The result continuation that contains the marker to use for the next request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchBlobs:inContainer:withResultContinuation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchBlobData:blob:</TokenIdentifier>
+			<Abstract>Sent when the client successfully returns blob data for a given blob.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlob</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchBlobData:(NSData *)data blob:(WABlob *)blob</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract>The data for the blob.</Abstract>
+				</Parameter><Parameter>
+					<Name>blob</Name>
+					<Abstract>The blob for the the data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchBlobData:blob:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchBlobData:URL:</TokenIdentifier>
+			<Abstract>Sent when the client successfully returns blob data for a given URL.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchBlobData:(NSData *)data URL:(NSURL *)URL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract>The data for the blob.</Abstract>
+				</Parameter><Parameter>
+					<Name>URL</Name>
+					<Abstract>The URL for the the data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchBlobData:URL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didAddBlobToContainer:blobName:</TokenIdentifier>
+			<Abstract>Sent when the client successfully adds a blob to a specified container.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didAddBlobToContainer:(WABlobContainer *)container blobName:(NSString *)blobName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>container</Name>
+					<Abstract>The container to add the blob.</Abstract>
+				</Parameter><Parameter>
+					<Name>blobName</Name>
+					<Abstract>The name of the blob</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didAddBlobToContainer:blobName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didAddBlob:toContainer:</TokenIdentifier>
+			<Abstract>Sent when the client successfully adds a blob to a specified container.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlobContainer</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didAddBlob:(WABlob *)blob toContainer:(WABlobContainer *)container</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>blob</Name>
+					<Abstract>The blob added.</Abstract>
+				</Parameter><Parameter>
+					<Name>container</Name>
+					<Abstract>The container the blob was added.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didAddBlob:toContainer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didDeleteBlob:</TokenIdentifier>
+			<Abstract>Sent when the client successfully deletes a blob.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WABlob</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didDeleteBlob:(WABlob *)blob</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>blob</Name>
+					<Abstract>The blob that was deleted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didDeleteBlob:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchQueues:</TokenIdentifier>
+			<Abstract>Sent when the client successfully returns a list of queues.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueue</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchQueues:(NSArray *)queues</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request</Abstract>
+				</Parameter><Parameter>
+					<Name>queues</Name>
+					<Abstract>An array of WAQueue objects.
+
+@deprecated Now use WACloudStorageClientDelegate#storageClient:didFetchQueues:withResultContinuation:</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchQueues:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchQueues:withResultContinuation:</TokenIdentifier>
+			<Abstract>Sent when the client successfully returns a list of queues with a result continuation.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueue</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchQueues:(NSArray *)queues withResultContinuation:(WAResultContinuation *)resultContinuation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request</Abstract>
+				</Parameter><Parameter>
+					<Name>queues</Name>
+					<Abstract>An array of WAQueue objects.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The result continuation that contains the marker to use for the next request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchQueues:withResultContinuation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didAddQueueNamed:</TokenIdentifier>
+			<Abstract>Sent when the client successfully adds a queue.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didAddQueueNamed:(NSString *)queueName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request</Abstract>
+				</Parameter><Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue that was added.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didAddQueueNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didDeleteQueueNamed:</TokenIdentifier>
+			<Abstract>Sent when the client successfully removes an existing queue.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didDeleteQueueNamed:(NSString *)queueName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue that was deleted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didDeleteQueueNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchQueueMessages:</TokenIdentifier>
+			<Abstract>Sent when the client successfully get messages from the specified queue.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchQueueMessages:(NSArray *)queueMessages</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>queueMessages</Name>
+					<Abstract>An array of WAQueue objects.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchQueueMessages:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchQueueMessage:</TokenIdentifier>
+			<Abstract>Sent when the client successfully got a single message from the specified queue</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchQueueMessage:(WAQueueMessage *)queueMessage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>queueMessage</Name>
+					<Abstract>The message that was fetched.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchQueueMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didPeekQueueMessage:</TokenIdentifier>
+			<Abstract>Sent when the client successfully peeked a single message from the specified queue.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didPeekQueueMessage:(WAQueueMessage *)queueMessage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>queueMessage</Name>
+					<Abstract>The message that was fetched.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didPeekQueueMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didPeekQueueMessages:</TokenIdentifier>
+			<Abstract>Sent when the client successfully peeked messages from the specified queue.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didPeekQueueMessages:(NSArray *)queueMessages</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>queueMessages</Name>
+					<Abstract>An array of WAQueueMessage objects.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didPeekQueueMessages:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didDeleteQueueMessage:queueName:</TokenIdentifier>
+			<Abstract>Sent when the client successfully delete a message from the specified queue</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAQueueMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didDeleteQueueMessage:(WAQueueMessage *)queueMessage queueName:(NSString *)queueName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>queueMessage</Name>
+					<Abstract>The message that was deleted.</Abstract>
+				</Parameter><Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue where the message was deleted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didDeleteQueueMessage:queueName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didAddMessageToQueue:queueName:</TokenIdentifier>
+			<Abstract>Sent when the client successfully put a message into the specified queue.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didAddMessageToQueue:(NSString *)message queueName:(NSString *)queueName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract>The message that was added.</Abstract>
+				</Parameter><Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue that the message was added.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didAddMessageToQueue:queueName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchTables:</TokenIdentifier>
+			<Abstract>Sent when the client successfully returns a list of tables.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchTables:(NSArray *)tables</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>tables</Name>
+					<Abstract>An array of NSString objects that are the names of the tables.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchTables:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchTables:withResultContinuation:</TokenIdentifier>
+			<Abstract>Sent when the client successfully returns a list of tables with a continuation.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchTables:(NSArray *)tables withResultContinuation:(WAResultContinuation *)resultContinuation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>tables</Name>
+					<Abstract>An array of NSString objects that are the names of the tables.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The result continuation that contains the marker to use for the next request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchTables:withResultContinuation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didCreateTableNamed:</TokenIdentifier>
+			<Abstract>Sent when the client successfully creates a table.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didCreateTableNamed:(NSString *)tableName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>tableName</Name>
+					<Abstract>The table name that was created.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didCreateTableNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didDeleteTableNamed:</TokenIdentifier>
+			<Abstract>Sent when the client successfully deletes a specified table.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didDeleteTableNamed:(NSString *)tableName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>tableName</Name>
+					<Abstract>The table name that was deleted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didDeleteTableNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchEntities:fromTableNamed:</TokenIdentifier>
+			<Abstract>Sent when the client successfully returns a list of entities from a table.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchEntities:(NSArray *)entities fromTableNamed:(NSString *)tableName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>entities</Name>
+					<Abstract>An array of WATableEntity objects.</Abstract>
+				</Parameter><Parameter>
+					<Name>tableName</Name>
+					<Abstract>The name of the table that contains the enties.
+
+@deprecated Now use WACloudStorageClientDelegate#storageClient:didFetchEntities:fromTableNamed:withResultContinuation:</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchEntities:fromTableNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didFetchEntities:fromTableNamed:withResultContinuation:</TokenIdentifier>
+			<Abstract>Sent when the client successfully returns a list of entities from a table.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didFetchEntities:(NSArray *)entities fromTableNamed:(NSString *)tableName withResultContinuation:(WAResultContinuation *)resultContinuation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>entities</Name>
+					<Abstract>An array of WATableEntity objects.</Abstract>
+				</Parameter><Parameter>
+					<Name>tableName</Name>
+					<Abstract>The table name that contains the entities.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultContinuation</Name>
+					<Abstract>The result continuation that contains the marker to use for the next request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didFetchEntities:fromTableNamed:withResultContinuation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didInsertEntity:</TokenIdentifier>
+			<Abstract>Sent when the client successfully inserts an entity into a table.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didInsertEntity:(WATableEntity *)entity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>entity</Name>
+					<Abstract>The entity that was inserted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didInsertEntity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didUpdateEntity:</TokenIdentifier>
+			<Abstract>Sent when the client successfully updates an entity within a table.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didUpdateEntity:(WATableEntity *)entity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>entity</Name>
+					<Abstract>The entity that was updated.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didUpdateEntity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didMergeEntity:</TokenIdentifier>
+			<Abstract>Sent when the client successfully merges an entity within a table.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didMergeEntity:(WATableEntity *)entity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>entity</Name>
+					<Abstract>The entity that was merged.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didMergeEntity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WACloudStorageClientDelegate/storageClient:didDeleteEntity:</TokenIdentifier>
+			<Abstract>Sent when the client successfully deletes an entity from a table.</Abstract>
+			<DeclaredIn>WACloudStorageClientDelegate.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)storageClient:(WACloudStorageClient *)client didDeleteEntity:(WATableEntity *)entity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>client</Name>
+					<Abstract>The client that sent the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>entity</Name>
+					<Abstract>The entity that was deleted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storageClient:didDeleteEntity:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

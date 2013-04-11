@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WAAuthenticationCredential.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WAAuthenticationCredential</TokenIdentifier>
+			<Abstract>A class that represents an authentication object that can be passed to the WACloudStorageClient. The class can be initialized using a Windows Azure account name and key, or with a proxy server URL, username, and password.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WACloudStorageClient</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAAuthenticationCredential/usesProxy</TokenIdentifier>
+			<Abstract>Determines whether this authentication credential uses a proxy service.
+The default value is NO.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL usesProxy</Declaration>
+			
+			
+			<Anchor>//api/name/usesProxy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAAuthenticationCredential/proxyURL</TokenIdentifier>
+			<Abstract>The URL of the proxy service.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSURL *proxyURL</Declaration>
+			
+			
+			<Anchor>//api/name/proxyURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAAuthenticationCredential/token</TokenIdentifier>
+			<Abstract>The seesion token returned from authentication with the proxy service.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *token</Declaration>
+			
+			
+			<Anchor>//api/name/token</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAAuthenticationCredential/accountName</TokenIdentifier>
+			<Abstract>The account name for Windows Azure storage or nil if not authenticating directly.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accountName</Declaration>
+			
+			
+			<Anchor>//api/name/accountName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAAuthenticationCredential/accessKey</TokenIdentifier>
+			<Abstract>The account access key for Windows Azure storage or nil if not authenticating directly.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accessKey</Declaration>
+			
+			
+			<Anchor>//api/name/accessKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAAuthenticationCredential/tableServiceURL</TokenIdentifier>
+			<Abstract>The URL of the table service endpoint, if authenticating with a proxy service.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSURL *tableServiceURL</Declaration>
+			
+			
+			<Anchor>//api/name/tableServiceURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAAuthenticationCredential/blobServiceURL</TokenIdentifier>
+			<Abstract>The URL of the blob service endpoint, if authenticating with a proxy service.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSURL *blobServiceURL</Declaration>
+			
+			
+			<Anchor>//api/name/blobServiceURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WAAuthenticationCredential/credentialWithAzureServiceAccount:accessKey:</TokenIdentifier>
+			<Abstract>Initializes a newly created WAAuthenticationCredential with a specified account name and access key obtained from the Windows Azure portal.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+			<Declaration>+ (WAAuthenticationCredential *)credentialWithAzureServiceAccount:(NSString *)accountName accessKey:(NSString *)accessKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>accountName</Name>
+					<Abstract>The Windows Azure storage account name.</Abstract>
+				</Parameter><Parameter>
+					<Name>accessKey</Name>
+					<Abstract>The access key for the given account.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WAAuthenticationCredential object.</Abstract></ReturnValue>
+			<Anchor>//api/name/credentialWithAzureServiceAccount:accessKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WAAuthenticationCredential/authenticateCredentialSynchronousWithProxyURL:user:password:error:</TokenIdentifier>
+			<Abstract>Initializes a newly created WAAuthenticationCredential with a specified proxy URL, the user name and password for the proxy service, and an NSError object that will contain the error information if the authentication fails.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+			<Declaration>+ (WAAuthenticationCredential *)authenticateCredentialSynchronousWithProxyURL:(NSURL *)proxyURL user:(NSString *)user password:(NSString *)password error:(NSError **)returnError</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>proxyURL</Name>
+					<Abstract>The URL address of the proxy service.</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract>The user name for the proxy service.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract>The password for the proxy service.</Abstract>
+				</Parameter><Parameter>
+					<Name>returnError</Name>
+					<Abstract>An NSError object that will contain the error if the authentication fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WAAuthenticationCredential object.</Abstract></ReturnValue>
+			<Anchor>//api/name/authenticateCredentialSynchronousWithProxyURL:user:password:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WAAuthenticationCredential/authenticateCredentialSynchronousWithProxyURL:tableServiceURL:blobServiceURL:user:password:error:</TokenIdentifier>
+			<Abstract>Initializes a newly created WAAuthenticationCredential with a specified proxy URL, the table service URL, the blob service URL, the user name and password for the proxy service, and an NSError object that will contain the error information if the authentication fails.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+			<Declaration>+ (WAAuthenticationCredential *)authenticateCredentialSynchronousWithProxyURL:(NSURL *)proxyURL tableServiceURL:(NSURL *)tablesURL blobServiceURL:(NSURL *)blobsURL user:(NSString *)user password:(NSString *)password error:(NSError **)returnError</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>proxyURL</Name>
+					<Abstract>The URL address of the proxy service.</Abstract>
+				</Parameter><Parameter>
+					<Name>tablesURL</Name>
+					<Abstract>The URL address of the table service.</Abstract>
+				</Parameter><Parameter>
+					<Name>blobsURL</Name>
+					<Abstract>The URL address of the blob service.</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract>The user name for the proxy service.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract>The password for the proxy service.</Abstract>
+				</Parameter><Parameter>
+					<Name>returnError</Name>
+					<Abstract>An NSError object that will contain the error if the authentication fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WAAuthenticationCredential object.</Abstract></ReturnValue>
+			<Anchor>//api/name/authenticateCredentialSynchronousWithProxyURL:tableServiceURL:blobServiceURL:user:password:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WAAuthenticationCredential/authenticateCredentialWithProxyURL:user:password:delegate:</TokenIdentifier>
+			<Abstract>Initializes a newly created WAAuthenticationCredential with a specified proxy URL, the user name and password for the proxy service, and a delegate to callback when authentication completes.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/WAAuthenticationDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (WAAuthenticationCredential *)authenticateCredentialWithProxyURL:(NSURL *)proxyURL user:(NSString *)user password:(NSString *)password delegate:(id&lt;WAAuthenticationDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>proxyURL</Name>
+					<Abstract>The URL address of the proxy service.</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract>The user name for the proxy service.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract>The password for the proxy service.</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract>The delegate to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WAAuthenticationCredential object.</Abstract></ReturnValue>
+			<Anchor>//api/name/authenticateCredentialWithProxyURL:user:password:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WAAuthenticationCredential/authenticateCredentialWithProxyURL:user:password:withCompletionHandler:</TokenIdentifier>
+			<Abstract>Initializes a newly created WAAuthenticationCredential with a specified proxy URL, the user name and password for the proxy service.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+			<Declaration>+ (WAAuthenticationCredential *)authenticateCredentialWithProxyURL:(NSURL *)proxyURL user:(NSString *)user password:(NSString *)password withCompletionHandler:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>proxyURL</Name>
+					<Abstract>The URL address of the proxy service.</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract>The user name for the proxy service.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract>The password for the proxy service.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract>A block object that is called with the authentication completes. The block will contain an NSError</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WAAuthenticationCredential object.</Abstract></ReturnValue>
+			<Anchor>//api/name/authenticateCredentialWithProxyURL:user:password:withCompletionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WAAuthenticationCredential/authenticateCredentialWithProxyURL:accessToken:</TokenIdentifier>
+			<Abstract>Initializes a newly created WAAuthenticationCredential with a specified proxy URL and access token. The access token is the result of using Windows Azure Access Control Service.</Abstract>
+			<DeclaredIn>WAAuthenticationCredential.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WACloudAccessToken</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (WAAuthenticationCredential *)authenticateCredentialWithProxyURL:(NSURL *)proxyURL accessToken:(WACloudAccessToken *)accessToken</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>proxyURL</Name>
+					<Abstract>The URL address of the proxy service.</Abstract>
+				</Parameter><Parameter>
+					<Name>accessToken</Name>
+					<Abstract>The WACloudAccessToken used to authenticate.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WAAuthenticationCredential object.</Abstract></ReturnValue>
+			<Anchor>//api/name/authenticateCredentialWithProxyURL:accessToken:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

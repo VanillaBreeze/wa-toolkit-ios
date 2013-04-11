@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WAQueue.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WAQueue</TokenIdentifier>
+			<Abstract>A class that represents a Windows Azure queue.</Abstract>
+			<DeclaredIn>WAQueue.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAQueue/queueName</TokenIdentifier>
+			<Abstract>The name of the queue.</Abstract>
+			<DeclaredIn>WAQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *queueName</Declaration>
+			
+			
+			<Anchor>//api/name/queueName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAQueue/URL</TokenIdentifier>
+			<Abstract>The address of the queue.</Abstract>
+			<DeclaredIn>WAQueue.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WAQueue/initQueueWithName:URL:</TokenIdentifier>
+			<Abstract>Initializes a newly created WAQueue with a specified name and URL.</Abstract>
+			<DeclaredIn>WAQueue.h</DeclaredIn>			
+			
+			<Declaration>- (id)initQueueWithName:(NSString *)queueName URL:(NSString *)URL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queueName</Name>
+					<Abstract>The name of the queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>URL</Name>
+					<Abstract>The URL for the queue.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WAQueue object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initQueueWithName:URL:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

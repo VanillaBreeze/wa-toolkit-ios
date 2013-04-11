@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WATableEntity.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WATableEntity</TokenIdentifier>
+			<Abstract>A class that represents an entity ina a Windows Azure table.</Abstract>
+			<DeclaredIn>WATableEntity.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WATableEntity/tableName</TokenIdentifier>
+			<Abstract>The name of the table where this entity is located.</Abstract>
+			<DeclaredIn>WATableEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *tableName</Declaration>
+			
+			
+			<Anchor>//api/name/tableName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WATableEntity/partitionKey</TokenIdentifier>
+			<Abstract>The partition key of a table entity.
+The concatenation of the partition key and row key form the primary key for an entity, and so must be unique within the table.</Abstract>
+			<DeclaredIn>WATableEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *partitionKey</Declaration>
+			
+			
+			<Anchor>//api/name/partitionKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WATableEntity/rowKey</TokenIdentifier>
+			<Abstract>The row key of a table entity.
+The concatenation of the partition key and row key form the primary key for an entity, and so must be unique within the table.</Abstract>
+			<DeclaredIn>WATableEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *rowKey</Declaration>
+			
+			
+			<Anchor>//api/name/rowKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WATableEntity/timeStamp</TokenIdentifier>
+			<Abstract>The timestamp for this entity.</Abstract>
+			<DeclaredIn>WATableEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDate *timeStamp</Declaration>
+			
+			
+			<Anchor>//api/name/timeStamp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WATableEntity/keys</TokenIdentifier>
+			<Abstract>Returns a new array containing the entity’s keys.</Abstract>
+			<DeclaredIn>WATableEntity.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)keys</Declaration>
+			
+			<ReturnValue><Abstract>A new array containing the entity’s keys, or an empty array if the entity has no entries.</Abstract></ReturnValue>
+			<Anchor>//api/name/keys</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WATableEntity/objectForKey:</TokenIdentifier>
+			<Abstract>Returns the value associated with a given key.</Abstract>
+			<DeclaredIn>WATableEntity.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract>The key for which to return the corresponding value.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The value associated with key, or nil if no value is associated with key.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WATableEntity/setObject:forKey:</TokenIdentifier>
+			<Abstract>Adds a given key-value pair to the entity.</Abstract>
+			<DeclaredIn>WATableEntity.h</DeclaredIn>			
+			
+			<Declaration>- (void)setObject:(id)value forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract>The value for key.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract>The key for value.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setObject:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WATableEntity/createEntityForTable:</TokenIdentifier>
+			<Abstract>Creates a new entity given the name of an existing table.</Abstract>
+			<DeclaredIn>WATableEntity.h</DeclaredIn>			
+			
+			<Declaration>+ (WATableEntity *)createEntityForTable:(NSString *)table</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>table</Name>
+					<Abstract>The name of the table for this entity.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>A new WATableEntity object.</Abstract></ReturnValue>
+			<Anchor>//api/name/createEntityForTable:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

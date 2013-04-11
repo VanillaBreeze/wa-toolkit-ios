@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WAResultContinuation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WAResultContinuation</TokenIdentifier>
+			<Abstract>A class that represents continuation token information used with paging Windows Azure data.</Abstract>
+			<DeclaredIn>WAResultContinuation.h</DeclaredIn>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAResultContinuation/nextPartitionKey</TokenIdentifier>
+			<Abstract>The next partition key to be returned in a subsequent query against the table.</Abstract>
+			<DeclaredIn>WAResultContinuation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *nextPartitionKey</Declaration>
+			
+			
+			<Anchor>//api/name/nextPartitionKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAResultContinuation/nextRowKey</TokenIdentifier>
+			<Abstract>The next row key to be returned in a subsequent query against the table.</Abstract>
+			<DeclaredIn>WAResultContinuation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *nextRowKey</Declaration>
+			
+			
+			<Anchor>//api/name/nextRowKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAResultContinuation/nextTableKey</TokenIdentifier>
+			<Abstract>If the list of tables returned is not complete, the name of the next table in the list.</Abstract>
+			<DeclaredIn>WAResultContinuation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *nextTableKey</Declaration>
+			
+			
+			<Anchor>//api/name/nextTableKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAResultContinuation/nextMarker</TokenIdentifier>
+			<Abstract>A value that identifies the portion of the list to be returned with the next list operation if the list returned was not complete. The marker value may then be used in a subsequent call to request the next set of list items.</Abstract>
+			<DeclaredIn>WAResultContinuation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *nextMarker</Declaration>
+			
+			
+			<Anchor>//api/name/nextMarker</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAResultContinuation/continuationType</TokenIdentifier>
+			<Abstract>The type of continuation token.</Abstract>
+			<DeclaredIn>WAResultContinuation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) WAContinuationType continuationType</Declaration>
+			
+			
+			<Anchor>//api/name/continuationType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WAResultContinuation/hasContinuation</TokenIdentifier>
+			<Abstract>Determines if there is a continuation. The default is WAContinuationNone.</Abstract>
+			<DeclaredIn>WAResultContinuation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL hasContinuation</Declaration>
+			
+			
+			<Anchor>//api/name/hasContinuation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WAResultContinuation/initWithNextParitionKey:nextRowKey:</TokenIdentifier>
+			<Abstract>Initializes a newly created WAResultContinuation with a parition key and row key.
+The continuationType will be WAContinuationEntity.</Abstract>
+			<DeclaredIn>WAResultContinuation.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithNextParitionKey:(NSString *)nextParitionKey nextRowKey:(NSString *)nextRowKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>nextParitionKey</Name>
+					<Abstract>The next partition key.</Abstract>
+				</Parameter><Parameter>
+					<Name>nextRowKey</Name>
+					<Abstract>The next row key.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WAResultContinuation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithNextParitionKey:nextRowKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WAResultContinuation/initWithNextTableKey:</TokenIdentifier>
+			<Abstract>Initializes a newly created WAResultContinuation with a table key.
+The continuationType will be WAContinuationTable.</Abstract>
+			<DeclaredIn>WAResultContinuation.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithNextTableKey:(NSString *)nextTableKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>nextTableKey</Name>
+					<Abstract>The next table key.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WAResultContinuation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithNextTableKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WAResultContinuation/initWithContainerMarker:continuationType:</TokenIdentifier>
+			<Abstract>Initializes a newly created WAResultContinuation with a marker and continuation type.</Abstract>
+			<DeclaredIn>WAResultContinuation.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithContainerMarker:(NSString *)marker continuationType:(WAContinuationType)continuationType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>marker</Name>
+					<Abstract>The marker of the next item in the list operation.</Abstract>
+				</Parameter><Parameter>
+					<Name>continuationType</Name>
+					<Abstract>The type of list operation.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WAResultContinuation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithContainerMarker:continuationType:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

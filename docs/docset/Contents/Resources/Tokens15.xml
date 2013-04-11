@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WATableFetchRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WATableFetchRequest</TokenIdentifier>
+			<Abstract>A class that represents a Windows Azure Table Storage fetch request.</Abstract>
+			<DeclaredIn>WATableFetchRequest.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WATableFetchRequest/tableName</TokenIdentifier>
+			<Abstract>The table name.</Abstract>
+			<DeclaredIn>WATableFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *tableName</Declaration>
+			
+			
+			<Anchor>//api/name/tableName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WATableFetchRequest/partitionKey</TokenIdentifier>
+			<Abstract>The partition key.</Abstract>
+			<DeclaredIn>WATableFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *partitionKey</Declaration>
+			
+			
+			<Anchor>//api/name/partitionKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WATableFetchRequest/rowKey</TokenIdentifier>
+			<Abstract>The row key.</Abstract>
+			<DeclaredIn>WATableFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *rowKey</Declaration>
+			
+			
+			<Anchor>//api/name/rowKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WATableFetchRequest/filter</TokenIdentifier>
+			<Abstract>The filter to use in the table fetch request.</Abstract>
+			<DeclaredIn>WATableFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *filter</Declaration>
+			
+			
+			<Anchor>//api/name/filter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WATableFetchRequest/topRows</TokenIdentifier>
+			<Abstract>The number of rows to limit with the tech.</Abstract>
+			<DeclaredIn>WATableFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSInteger topRows</Declaration>
+			
+			
+			<Anchor>//api/name/topRows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WATableFetchRequest/resultContinuation</TokenIdentifier>
+			<Abstract>The continuation to use in the fetch request.</Abstract>
+			<DeclaredIn>WATableFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) WAResultContinuation *resultContinuation</Declaration>
+			
+			
+			<Anchor>//api/name/resultContinuation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WATableFetchRequest/fetchRequestForTable:</TokenIdentifier>
+			<Abstract>Create a new WATableFetchRequest with a table name.</Abstract>
+			<DeclaredIn>WATableFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (WATableFetchRequest *)fetchRequestForTable:(NSString *)tableName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableName</Name>
+					<Abstract>The table name for the fetch request.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WATableFetchRequest object.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchRequestForTable:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WATableFetchRequest/fetchRequestForTable:predicate:error:</TokenIdentifier>
+			<Abstract>Create a new WATableFetchRequest with a table name, predicate, and error.</Abstract>
+			<DeclaredIn>WATableFetchRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (WATableFetchRequest *)fetchRequestForTable:(NSString *)tableName predicate:(NSPredicate *)predicate error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableName</Name>
+					<Abstract>The table name for the fetch request.</Abstract>
+				</Parameter><Parameter>
+					<Name>predicate</Name>
+					<Abstract>The predicate for the fetch request.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract>An NSError object that will be populated if the predicate is not valid.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The newly initialized WATableFetchRequest object.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchRequestForTable:predicate:error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
